@@ -21,10 +21,7 @@ struct SignupView: View {
         }
         .padding()
         .background(
-                Image("blueTopBackground")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .ignoresSafeArea()
+            LinearGradient(gradient: Gradients.extraWhiteExtraPrimaryBlack.gradient, startPoint: .topLeading, endPoint: .bottomTrailing)
         )
     }
 }
@@ -34,69 +31,95 @@ private extension SignupView {
         Text("Sign Up")
             .font(LatoFont.bold.font(size: 40))
             .fontWeight(.bold)
-            .foregroundColor(.onColor)
+            .foregroundColor(.onWhite)
             .padding()
     }
     
     var firstNameSection: some View {
-        TextField("First Name", text: $viewModel.firstName)
+        TextField(
+            "",
+            text: $viewModel.firstName,
+            prompt: Text("First Name")
+                .foregroundColor(.onColor)
+        )
             .font(LatoFont.regular.font(size: 16))
-            .foregroundStyle(.black, .black)
+            .foregroundColor(.onColor)
             .multilineTextAlignment(TextAlignment.center)
             .textContentType(.name)
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 40)
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.onColor, lineWidth: 1)
             )
     }
     
     var lastNameSection: some View {
-        TextField("Last Name", text: $viewModel.lastName)
+        TextField(
+            "",
+            text: $viewModel.lastName,
+            prompt: Text("Last Name")
+                .foregroundColor(.onColor)
+        )
             .font(LatoFont.regular.font(size: 16))
+            .foregroundColor(.onColor)
             .multilineTextAlignment(TextAlignment.center)
             .textContentType(.name)
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 40)
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.onColor, lineWidth: 1)
             )
             .padding(.top, 8)
     }
     
     var emailSection: some View {
-        TextField("Email", text: $viewModel.emailAddress)
+        TextField("",
+                  text: $viewModel.emailAddress,
+                  prompt: Text("Email")
+                    .foregroundColor(.onColor)
+        )
             .font(LatoFont.regular.font(size: 16))
+            .foregroundColor(.onColor)
             .multilineTextAlignment(TextAlignment.center)
             .textContentType(.emailAddress)
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 40)
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.onColor, lineWidth: 1)
             )
             .padding(.top, 8)
     }
     
     var passwordSection: some View {
         VStack {
-            SecureField("Password", text: $viewModel.password)
+            SecureField("",
+                        text: $viewModel.password,
+                        prompt: Text("Password")
+                            .foregroundColor(.onColor)
+            )
                 .font(LatoFont.regular.font(size: 16))
+                .foregroundColor(.onColor)
                 .multilineTextAlignment(TextAlignment.center)
                 .textContentType(.password)
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.black, lineWidth: 1)
+                        .stroke(Color.onColor, lineWidth: 1)
                 )
                 .padding(.top, 8)
-            SecureField("Confirm Password", text: $viewModel.passwordConfirmation)
+            SecureField("",
+                        text: $viewModel.passwordConfirmation,
+                        prompt: Text("Confirm Password")
+                            .foregroundColor(.onColor)
+            )
                 .font(LatoFont.regular.font(size: 16))
+                .foregroundColor(.onColor)
                 .multilineTextAlignment(TextAlignment.center)
                 .textContentType(.password)
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.black, lineWidth: 1)
+                        .stroke(Color.onColor, lineWidth: 1)
                 )
                 .padding(.top, 8)
         }
@@ -117,6 +140,7 @@ private extension SignupView {
         )
         .clipShape(Capsule())
         .padding()
+        .padding(.top, 16)
     }
 }
 
