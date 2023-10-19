@@ -11,6 +11,32 @@
 		C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75850392A6E286600AE21F5 /* ContentView.swift */; };
 		C758503C2A6E286700AE21F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C758503B2A6E286700AE21F5 /* Assets.xcassets */; };
 		C758503F2A6E286700AE21F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */; };
+		C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */; };
+		C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC622AE0A49800EFC9C3 /* SignupView.swift */; };
+		C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */; };
+		C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */; };
+		C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */; };
+		C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */; };
+		C77BDC822AE0AA7B00EFC9C3 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC702AE0AA7A00EFC9C3 /* Lato-Light.ttf */; };
+		C77BDC832AE0AA7B00EFC9C3 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC712AE0AA7A00EFC9C3 /* Lato-Italic.ttf */; };
+		C77BDC842AE0AA7B00EFC9C3 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC722AE0AA7A00EFC9C3 /* Lato-BlackItalic.ttf */; };
+		C77BDC852AE0AA7B00EFC9C3 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC732AE0AA7A00EFC9C3 /* Lato-Hairline.ttf */; };
+		C77BDC862AE0AA7B00EFC9C3 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC742AE0AA7A00EFC9C3 /* Lato-Black.ttf */; };
+		C77BDC872AE0AA7B00EFC9C3 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC752AE0AA7A00EFC9C3 /* Lato-LightItalic.ttf */; };
+		C77BDC882AE0AA7B00EFC9C3 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC762AE0AA7A00EFC9C3 /* Lato-Medium.ttf */; };
+		C77BDC892AE0AA7B00EFC9C3 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC772AE0AA7A00EFC9C3 /* Lato-BoldItalic.ttf */; };
+		C77BDC8A2AE0AA7B00EFC9C3 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC782AE0AA7A00EFC9C3 /* Lato-HeavyItalic.ttf */; };
+		C77BDC8B2AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC792AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf */; };
+		C77BDC8C2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7A2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf */; };
+		C77BDC8D2AE0AA7B00EFC9C3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7B2AE0AA7B00EFC9C3 /* Lato-Bold.ttf */; };
+		C77BDC8E2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7C2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf */; };
+		C77BDC8F2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7D2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf */; };
+		C77BDC902AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7E2AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf */; };
+		C77BDC912AE0AA7B00EFC9C3 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7F2AE0AA7B00EFC9C3 /* Lato-Thin.ttf */; };
+		C77BDC922AE0AA7B00EFC9C3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC802AE0AA7B00EFC9C3 /* Lato-Regular.ttf */; };
+		C77BDC932AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */; };
+		C77BDC952AE0E1E100EFC9C3 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */; };
+		C77BDC972AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +45,32 @@
 		C75850392A6E286600AE21F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C758503B2A6E286700AE21F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C77BDC622AE0A49800EFC9C3 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C77BDC702AE0AA7A00EFC9C3 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		C77BDC712AE0AA7A00EFC9C3 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		C77BDC722AE0AA7A00EFC9C3 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC732AE0AA7A00EFC9C3 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		C77BDC742AE0AA7A00EFC9C3 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		C77BDC752AE0AA7A00EFC9C3 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC762AE0AA7A00EFC9C3 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		C77BDC772AE0AA7A00EFC9C3 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC782AE0AA7A00EFC9C3 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC792AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC7A2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		C77BDC7B2AE0AA7B00EFC9C3 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		C77BDC7C2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC7D2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		C77BDC7E2AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC7F2AE0AA7B00EFC9C3 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		C77BDC802AE0AA7B00EFC9C3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
+		C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +105,10 @@
 			children = (
 				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
+				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
 				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
+				C77BDC6A2AE0AA2700EFC9C3 /* Resources */,
+				C77BDC662AE0A98D00EFC9C3 /* Extensions */,
 				C758503D2A6E286700AE21F5 /* Preview Content */,
 			);
 			path = "pauga family reunion";
@@ -65,6 +120,77 @@
 				C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C77BDC5D2AE0A3D400EFC9C3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC612AE0A47E00EFC9C3 /* Sign Up */,
+				C77BDC5E2AE0A42C00EFC9C3 /* Models */,
+				C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */,
+				C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C77BDC5E2AE0A42C00EFC9C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C77BDC612AE0A47E00EFC9C3 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC622AE0A49800EFC9C3 /* SignupView.swift */,
+				C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		C77BDC662AE0A98D00EFC9C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C77BDC6A2AE0AA2700EFC9C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC6D2AE0AA4F00EFC9C3 /* Fonts */,
+				C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C77BDC6D2AE0AA4F00EFC9C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC742AE0AA7A00EFC9C3 /* Lato-Black.ttf */,
+				C77BDC722AE0AA7A00EFC9C3 /* Lato-BlackItalic.ttf */,
+				C77BDC7B2AE0AA7B00EFC9C3 /* Lato-Bold.ttf */,
+				C77BDC772AE0AA7A00EFC9C3 /* Lato-BoldItalic.ttf */,
+				C77BDC732AE0AA7A00EFC9C3 /* Lato-Hairline.ttf */,
+				C77BDC792AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf */,
+				C77BDC7A2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf */,
+				C77BDC782AE0AA7A00EFC9C3 /* Lato-HeavyItalic.ttf */,
+				C77BDC712AE0AA7A00EFC9C3 /* Lato-Italic.ttf */,
+				C77BDC702AE0AA7A00EFC9C3 /* Lato-Light.ttf */,
+				C77BDC752AE0AA7A00EFC9C3 /* Lato-LightItalic.ttf */,
+				C77BDC762AE0AA7A00EFC9C3 /* Lato-Medium.ttf */,
+				C77BDC7C2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf */,
+				C77BDC802AE0AA7B00EFC9C3 /* Lato-Regular.ttf */,
+				C77BDC7D2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf */,
+				C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */,
+				C77BDC7F2AE0AA7B00EFC9C3 /* Lato-Thin.ttf */,
+				C77BDC7E2AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf */,
+				C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +251,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77BDC862AE0AA7B00EFC9C3 /* Lato-Black.ttf in Resources */,
+				C77BDC912AE0AA7B00EFC9C3 /* Lato-Thin.ttf in Resources */,
+				C77BDC822AE0AA7B00EFC9C3 /* Lato-Light.ttf in Resources */,
+				C77BDC922AE0AA7B00EFC9C3 /* Lato-Regular.ttf in Resources */,
+				C77BDC8B2AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf in Resources */,
+				C77BDC932AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf in Resources */,
 				C758503F2A6E286700AE21F5 /* Preview Assets.xcassets in Resources */,
+				C77BDC872AE0AA7B00EFC9C3 /* Lato-LightItalic.ttf in Resources */,
+				C77BDC882AE0AA7B00EFC9C3 /* Lato-Medium.ttf in Resources */,
+				C77BDC8A2AE0AA7B00EFC9C3 /* Lato-HeavyItalic.ttf in Resources */,
+				C77BDC8D2AE0AA7B00EFC9C3 /* Lato-Bold.ttf in Resources */,
+				C77BDC852AE0AA7B00EFC9C3 /* Lato-Hairline.ttf in Resources */,
+				C77BDC8F2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf in Resources */,
+				C77BDC8E2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf in Resources */,
+				C77BDC842AE0AA7B00EFC9C3 /* Lato-BlackItalic.ttf in Resources */,
+				C77BDC832AE0AA7B00EFC9C3 /* Lato-Italic.ttf in Resources */,
+				C77BDC8C2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf in Resources */,
 				C758503C2A6E286700AE21F5 /* Assets.xcassets in Resources */,
+				C77BDC892AE0AA7B00EFC9C3 /* Lato-BoldItalic.ttf in Resources */,
+				C77BDC902AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77BDC972AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift in Sources */,
+				C77BDC952AE0E1E100EFC9C3 /* AuthenticationRootView.swift in Sources */,
+				C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */,
+				C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */,
+				C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */,
 				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,
+				C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */,
 				C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */,
+				C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */,
+				C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
