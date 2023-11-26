@@ -65,6 +65,7 @@
 		C75B1C162B13D87800EF21D5 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownErrors.swift; sourceTree = "<group>"; };
 		C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "pauga-family-reunion-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C77BDC622AE0A49800EFC9C3 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		C75850362A6E286600AE21F5 /* pauga family reunion */ = {
 			isa = PBXGroup;
 			children = (
+				C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */,
 				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
 				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
@@ -502,10 +504,10 @@
 				DEVELOPMENT_TEAM = FF38VL3JFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pauga-family-reunion-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pauga Family Reunion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,10 +534,10 @@
 				DEVELOPMENT_TEAM = FF38VL3JFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pauga-family-reunion-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pauga Family Reunion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
