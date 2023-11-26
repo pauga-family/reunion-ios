@@ -1,0 +1,8 @@
+{
+            "access_token": "test-jwt-token",
+            "id": 1,
+            "firstName": "Jon",
+            "lastName": "Snow",
+            "email": "winterIsComing@gmail.com"
+        }
+

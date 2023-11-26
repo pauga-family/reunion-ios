@@ -21,6 +21,8 @@
 		C75B1C172B13D87800EF21D5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C162B13D87800EF21D5 /* APIClient.swift */; };
 		C75B1C192B13DBE200EF21D5 /* KnownErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */; };
 		C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */; };
+		C75B1C1F2B13E92600EF21D5 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C1E2B13E92600EF21D5 /* Mockable.swift */; };
+		C75B1C222B13EAC000EF21D5 /* _createUserMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */; };
 		C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */; };
 		C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC622AE0A49800EFC9C3 /* SignupView.swift */; };
 		C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */; };
@@ -66,6 +68,8 @@
 		C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownErrors.swift; sourceTree = "<group>"; };
 		C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
 		C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "pauga-family-reunion-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C75B1C1E2B13E92600EF21D5 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = _createUserMockResponse.json; sourceTree = "<group>"; };
 		C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C77BDC622AE0A49800EFC9C3 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
@@ -127,9 +131,9 @@
 				C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */,
 				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
+				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
 				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
 				C75B1C032B13AF8F00EF21D5 /* Networking */,
-				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
 				C77BDC6A2AE0AA2700EFC9C3 /* Resources */,
 				C77BDC662AE0A98D00EFC9C3 /* Extensions */,
 				C758503D2A6E286700AE21F5 /* Preview Content */,
@@ -148,6 +152,7 @@
 		C75B1C032B13AF8F00EF21D5 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C75B1C1D2B13E90F00EF21D5 /* Mock */,
 				C75B1C112B13C47D00EF21D5 /* Auth */,
 				C75B1C0E2B13C09A00EF21D5 /* Error */,
 				C75B1C092B13B4F800EF21D5 /* Security */,
@@ -191,6 +196,23 @@
 				C75B1C122B13C49300EF21D5 /* AuthAPIProvider.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		C75B1C1D2B13E90F00EF21D5 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C202B13EA9600EF21D5 /* Mock Responses */,
+				C75B1C1E2B13E92600EF21D5 /* Mockable.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C75B1C202B13EA9600EF21D5 /* Mock Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */,
+			);
+			path = "Mock Responses";
 			sourceTree = "<group>";
 		};
 		C77BDC5D2AE0A3D400EFC9C3 /* Authentication */ = {
@@ -334,6 +356,7 @@
 				C77BDC882AE0AA7B00EFC9C3 /* Lato-Medium.ttf in Resources */,
 				C77BDC8A2AE0AA7B00EFC9C3 /* Lato-HeavyItalic.ttf in Resources */,
 				C77BDC8D2AE0AA7B00EFC9C3 /* Lato-Bold.ttf in Resources */,
+				C75B1C222B13EAC000EF21D5 /* _createUserMockResponse.json in Resources */,
 				C77BDC852AE0AA7B00EFC9C3 /* Lato-Hairline.ttf in Resources */,
 				C77BDC8F2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf in Resources */,
 				C77BDC8E2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf in Resources */,
@@ -372,6 +395,7 @@
 				C75B1C0D2B13B6DF00EF21D5 /* KeychainService.swift in Sources */,
 				C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */,
 				C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */,
+				C75B1C1F2B13E92600EF21D5 /* Mockable.swift in Sources */,
 				C75B1C172B13D87800EF21D5 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
