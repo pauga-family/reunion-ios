@@ -11,6 +11,18 @@
 		C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75850392A6E286600AE21F5 /* ContentView.swift */; };
 		C758503C2A6E286700AE21F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C758503B2A6E286700AE21F5 /* Assets.xcassets */; };
 		C758503F2A6E286700AE21F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */; };
+		C75B1C062B13B1FD00EF21D5 /* APIProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C052B13B1FD00EF21D5 /* APIProviding.swift */; };
+		C75B1C082B13B32800EF21D5 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C072B13B32800EF21D5 /* APIConfig.swift */; };
+		C75B1C0B2B13B50600EF21D5 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C0A2B13B50600EF21D5 /* JWT.swift */; };
+		C75B1C0D2B13B6DF00EF21D5 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C0C2B13B6DF00EF21D5 /* KeychainService.swift */; };
+		C75B1C102B13C0A800EF21D5 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C0F2B13C0A800EF21D5 /* ApiError.swift */; };
+		C75B1C132B13C49300EF21D5 /* AuthAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C122B13C49300EF21D5 /* AuthAPIProvider.swift */; };
+		C75B1C152B13D7D700EF21D5 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C142B13D7D700EF21D5 /* APIClientProtocol.swift */; };
+		C75B1C172B13D87800EF21D5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C162B13D87800EF21D5 /* APIClient.swift */; };
+		C75B1C192B13DBE200EF21D5 /* KnownErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */; };
+		C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */; };
+		C75B1C1F2B13E92600EF21D5 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C1E2B13E92600EF21D5 /* Mockable.swift */; };
+		C75B1C222B13EAC000EF21D5 /* _createUserMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */; };
 		C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */; };
 		C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC622AE0A49800EFC9C3 /* SignupView.swift */; };
 		C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */; };
@@ -45,6 +57,19 @@
 		C75850392A6E286600AE21F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C758503B2A6E286700AE21F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C75B1C052B13B1FD00EF21D5 /* APIProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviding.swift; sourceTree = "<group>"; };
+		C75B1C072B13B32800EF21D5 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		C75B1C0A2B13B50600EF21D5 /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		C75B1C0C2B13B6DF00EF21D5 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		C75B1C0F2B13C0A800EF21D5 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		C75B1C122B13C49300EF21D5 /* AuthAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIProvider.swift; sourceTree = "<group>"; };
+		C75B1C142B13D7D700EF21D5 /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		C75B1C162B13D87800EF21D5 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownErrors.swift; sourceTree = "<group>"; };
+		C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "pauga-family-reunion-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C75B1C1E2B13E92600EF21D5 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = _createUserMockResponse.json; sourceTree = "<group>"; };
 		C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C77BDC622AE0A49800EFC9C3 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
@@ -103,10 +128,12 @@
 		C75850362A6E286600AE21F5 /* pauga family reunion */ = {
 			isa = PBXGroup;
 			children = (
+				C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */,
 				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
-				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
 				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
+				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
+				C75B1C032B13AF8F00EF21D5 /* Networking */,
 				C77BDC6A2AE0AA2700EFC9C3 /* Resources */,
 				C77BDC662AE0A98D00EFC9C3 /* Extensions */,
 				C758503D2A6E286700AE21F5 /* Preview Content */,
@@ -120,6 +147,72 @@
 				C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C75B1C032B13AF8F00EF21D5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C1D2B13E90F00EF21D5 /* Mock */,
+				C75B1C112B13C47D00EF21D5 /* Auth */,
+				C75B1C0E2B13C09A00EF21D5 /* Error */,
+				C75B1C092B13B4F800EF21D5 /* Security */,
+				C75B1C042B13B1EB00EF21D5 /* Protocols */,
+				C75B1C072B13B32800EF21D5 /* APIConfig.swift */,
+				C75B1C162B13D87800EF21D5 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C75B1C042B13B1EB00EF21D5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C052B13B1FD00EF21D5 /* APIProviding.swift */,
+				C75B1C142B13D7D700EF21D5 /* APIClientProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C75B1C092B13B4F800EF21D5 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C0A2B13B50600EF21D5 /* JWT.swift */,
+				C75B1C0C2B13B6DF00EF21D5 /* KeychainService.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		C75B1C0E2B13C09A00EF21D5 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C0F2B13C0A800EF21D5 /* ApiError.swift */,
+				C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C75B1C112B13C47D00EF21D5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C122B13C49300EF21D5 /* AuthAPIProvider.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C75B1C1D2B13E90F00EF21D5 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C202B13EA9600EF21D5 /* Mock Responses */,
+				C75B1C1E2B13E92600EF21D5 /* Mockable.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C75B1C202B13EA9600EF21D5 /* Mock Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */,
+			);
+			path = "Mock Responses";
 			sourceTree = "<group>";
 		};
 		C77BDC5D2AE0A3D400EFC9C3 /* Authentication */ = {
@@ -154,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */,
+				C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,6 +356,7 @@
 				C77BDC882AE0AA7B00EFC9C3 /* Lato-Medium.ttf in Resources */,
 				C77BDC8A2AE0AA7B00EFC9C3 /* Lato-HeavyItalic.ttf in Resources */,
 				C77BDC8D2AE0AA7B00EFC9C3 /* Lato-Bold.ttf in Resources */,
+				C75B1C222B13EAC000EF21D5 /* _createUserMockResponse.json in Resources */,
 				C77BDC852AE0AA7B00EFC9C3 /* Lato-Hairline.ttf in Resources */,
 				C77BDC8F2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf in Resources */,
 				C77BDC8E2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf in Resources */,
@@ -281,16 +376,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75B1C0B2B13B50600EF21D5 /* JWT.swift in Sources */,
 				C77BDC972AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift in Sources */,
 				C77BDC952AE0E1E100EFC9C3 /* AuthenticationRootView.swift in Sources */,
+				C75B1C082B13B32800EF21D5 /* APIConfig.swift in Sources */,
 				C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */,
 				C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */,
+				C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */,
 				C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */,
 				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,
+				C75B1C102B13C0A800EF21D5 /* ApiError.swift in Sources */,
+				C75B1C152B13D7D700EF21D5 /* APIClientProtocol.swift in Sources */,
+				C75B1C132B13C49300EF21D5 /* AuthAPIProvider.swift in Sources */,
+				C75B1C192B13DBE200EF21D5 /* KnownErrors.swift in Sources */,
 				C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */,
+				C75B1C062B13B1FD00EF21D5 /* APIProviding.swift in Sources */,
 				C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */,
+				C75B1C0D2B13B6DF00EF21D5 /* KeychainService.swift in Sources */,
 				C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */,
 				C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */,
+				C75B1C1F2B13E92600EF21D5 /* Mockable.swift in Sources */,
+				C75B1C172B13D87800EF21D5 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +528,12 @@
 				DEVELOPMENT_TEAM = FF38VL3JFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pauga-family-reunion-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pauga Family Reunion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,11 +558,12 @@
 				DEVELOPMENT_TEAM = FF38VL3JFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pauga-family-reunion-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pauga Family Reunion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
