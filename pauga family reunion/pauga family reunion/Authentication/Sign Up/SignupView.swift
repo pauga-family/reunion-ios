@@ -13,16 +13,25 @@ struct SignupView: View {
         VStack(alignment: .center) {
             titleSection
             Spacer()
-            firstNameSection
-            lastNameSection
-            emailSection
-            passwordSection
-            ctaButton
+            if viewModel.loadingState == .loading {
+                ProgressView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tint(.onColor)
+            } else {
+                firstNameSection
+                lastNameSection
+                emailSection
+                passwordSection
+                ctaButton
+            }
         }
         .padding()
         .background(
             LinearGradient(gradient: Gradients.extraWhiteExtraPrimaryBlack.gradient, startPoint: .topLeading, endPoint: .bottomTrailing)
         )
+        .alert(isPresented: $viewModel.showErrorAlert) {
+            Alert(title: Text("Error"), message: Text(viewModel.errorMessage), dismissButton: .default(Text("Ok")))
+        }
     }
 }
 
@@ -34,7 +43,7 @@ private extension SignupView {
             .foregroundColor(.onWhite)
             .padding()
     }
-    
+
     var firstNameSection: some View {
         TextField(
             "",
@@ -46,13 +55,14 @@ private extension SignupView {
             .foregroundColor(.onColor)
             .multilineTextAlignment(TextAlignment.center)
             .textContentType(.name)
+            .disableAutocorrection(true)
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 40)
                     .stroke(Color.onColor, lineWidth: 1)
             )
     }
-    
+
     var lastNameSection: some View {
         TextField(
             "",
@@ -64,6 +74,7 @@ private extension SignupView {
             .foregroundColor(.onColor)
             .multilineTextAlignment(TextAlignment.center)
             .textContentType(.name)
+            .disableAutocorrection(true)
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 40)
@@ -71,7 +82,7 @@ private extension SignupView {
             )
             .padding(.top, 8)
     }
-    
+
     var emailSection: some View {
         TextField("",
                   text: $viewModel.emailAddress,
@@ -82,6 +93,8 @@ private extension SignupView {
             .foregroundColor(.onColor)
             .multilineTextAlignment(TextAlignment.center)
             .textContentType(.emailAddress)
+                .autocapitalization(.none)
+            .disableAutocorrection(true)
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 40)
@@ -89,7 +102,7 @@ private extension SignupView {
             )
             .padding(.top, 8)
     }
-    
+
     var passwordSection: some View {
         VStack {
             SecureField("",
@@ -101,6 +114,8 @@ private extension SignupView {
                 .foregroundColor(.onColor)
                 .multilineTextAlignment(TextAlignment.center)
                 .textContentType(.password)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 40)
@@ -116,6 +131,8 @@ private extension SignupView {
                 .foregroundColor(.onColor)
                 .multilineTextAlignment(TextAlignment.center)
                 .textContentType(.password)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 40)
@@ -124,7 +141,7 @@ private extension SignupView {
                 .padding(.top, 8)
         }
     }
-    
+
     var ctaButton: some View {
         Button {
             viewModel.ctaTapped()
@@ -145,5 +162,5 @@ private extension SignupView {
 }
 
 #Preview {
-    SignupView(viewModel: SignupViewModel())
+    SignupView(viewModel: SignupViewModel(apiClient: MockAPIClient()))
 }
