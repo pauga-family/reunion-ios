@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */; };
+		C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75850392A6E286600AE21F5 /* ContentView.swift */; };
+		C758503C2A6E286700AE21F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C758503B2A6E286700AE21F5 /* Assets.xcassets */; };
+		C758503F2A6E286700AE21F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */; };
+		C75B1C062B13B1FD00EF21D5 /* APIProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C052B13B1FD00EF21D5 /* APIProviding.swift */; };
+		C75B1C082B13B32800EF21D5 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C072B13B32800EF21D5 /* APIConfig.swift */; };
+		C75B1C0B2B13B50600EF21D5 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C0A2B13B50600EF21D5 /* JWT.swift */; };
+		C75B1C0D2B13B6DF00EF21D5 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C0C2B13B6DF00EF21D5 /* KeychainService.swift */; };
+		C75B1C102B13C0A800EF21D5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C0F2B13C0A800EF21D5 /* APIError.swift */; };
+		C75B1C132B13C49300EF21D5 /* AuthAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C122B13C49300EF21D5 /* AuthAPIProvider.swift */; };
+		C75B1C152B13D7D700EF21D5 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C142B13D7D700EF21D5 /* APIClientProtocol.swift */; };
+		C75B1C172B13D87800EF21D5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C162B13D87800EF21D5 /* APIClient.swift */; };
+		C75B1C192B13DBE200EF21D5 /* KnownErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */; };
+		C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */; };
+		C75B1C1F2B13E92600EF21D5 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C1E2B13E92600EF21D5 /* Mockable.swift */; };
+		C75B1C222B13EAC000EF21D5 /* _createUserMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */; };
+		C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */; };
+		C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC622AE0A49800EFC9C3 /* SignupView.swift */; };
+		C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */; };
+		C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */; };
+		C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */; };
+		C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */; };
+		C77BDC822AE0AA7B00EFC9C3 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC702AE0AA7A00EFC9C3 /* Lato-Light.ttf */; };
+		C77BDC832AE0AA7B00EFC9C3 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC712AE0AA7A00EFC9C3 /* Lato-Italic.ttf */; };
+		C77BDC842AE0AA7B00EFC9C3 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC722AE0AA7A00EFC9C3 /* Lato-BlackItalic.ttf */; };
+		C77BDC852AE0AA7B00EFC9C3 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC732AE0AA7A00EFC9C3 /* Lato-Hairline.ttf */; };
+		C77BDC862AE0AA7B00EFC9C3 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC742AE0AA7A00EFC9C3 /* Lato-Black.ttf */; };
+		C77BDC872AE0AA7B00EFC9C3 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC752AE0AA7A00EFC9C3 /* Lato-LightItalic.ttf */; };
+		C77BDC882AE0AA7B00EFC9C3 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC762AE0AA7A00EFC9C3 /* Lato-Medium.ttf */; };
+		C77BDC892AE0AA7B00EFC9C3 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC772AE0AA7A00EFC9C3 /* Lato-BoldItalic.ttf */; };
+		C77BDC8A2AE0AA7B00EFC9C3 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC782AE0AA7A00EFC9C3 /* Lato-HeavyItalic.ttf */; };
+		C77BDC8B2AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC792AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf */; };
+		C77BDC8C2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7A2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf */; };
+		C77BDC8D2AE0AA7B00EFC9C3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7B2AE0AA7B00EFC9C3 /* Lato-Bold.ttf */; };
+		C77BDC8E2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7C2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf */; };
+		C77BDC8F2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7D2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf */; };
+		C77BDC902AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7E2AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf */; };
+		C77BDC912AE0AA7B00EFC9C3 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC7F2AE0AA7B00EFC9C3 /* Lato-Thin.ttf */; };
+		C77BDC922AE0AA7B00EFC9C3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC802AE0AA7B00EFC9C3 /* Lato-Regular.ttf */; };
+		C77BDC932AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */; };
+		C77BDC952AE0E1E100EFC9C3 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */; };
+		C77BDC972AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C75850342A6E286600AE21F5 /* pauga family reunion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pauga family reunion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pauga_family_reunionApp.swift; sourceTree = "<group>"; };
+		C75850392A6E286600AE21F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C758503B2A6E286700AE21F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C75B1C052B13B1FD00EF21D5 /* APIProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviding.swift; sourceTree = "<group>"; };
+		C75B1C072B13B32800EF21D5 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		C75B1C0A2B13B50600EF21D5 /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		C75B1C0C2B13B6DF00EF21D5 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		C75B1C0F2B13C0A800EF21D5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C75B1C122B13C49300EF21D5 /* AuthAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIProvider.swift; sourceTree = "<group>"; };
+		C75B1C142B13D7D700EF21D5 /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		C75B1C162B13D87800EF21D5 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownErrors.swift; sourceTree = "<group>"; };
+		C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "pauga-family-reunion-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C75B1C1E2B13E92600EF21D5 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = _createUserMockResponse.json; sourceTree = "<group>"; };
+		C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C77BDC622AE0A49800EFC9C3 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C77BDC702AE0AA7A00EFC9C3 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		C77BDC712AE0AA7A00EFC9C3 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		C77BDC722AE0AA7A00EFC9C3 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC732AE0AA7A00EFC9C3 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		C77BDC742AE0AA7A00EFC9C3 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		C77BDC752AE0AA7A00EFC9C3 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC762AE0AA7A00EFC9C3 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		C77BDC772AE0AA7A00EFC9C3 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC782AE0AA7A00EFC9C3 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC792AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC7A2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		C77BDC7B2AE0AA7B00EFC9C3 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		C77BDC7C2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC7D2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		C77BDC7E2AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC7F2AE0AA7B00EFC9C3 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		C77BDC802AE0AA7B00EFC9C3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
+		C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C75850312A6E286600AE21F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C758502B2A6E286600AE21F5 = {
+			isa = PBXGroup;
+			children = (
+				C75850362A6E286600AE21F5 /* pauga family reunion */,
+				C75850352A6E286600AE21F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C75850352A6E286600AE21F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C75850342A6E286600AE21F5 /* pauga family reunion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C75850362A6E286600AE21F5 /* pauga family reunion */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */,
+				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
+				C75850392A6E286600AE21F5 /* ContentView.swift */,
+				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
+				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
+				C75B1C032B13AF8F00EF21D5 /* Networking */,
+				C77BDC6A2AE0AA2700EFC9C3 /* Resources */,
+				C77BDC662AE0A98D00EFC9C3 /* Extensions */,
+				C758503D2A6E286700AE21F5 /* Preview Content */,
+			);
+			path = "pauga family reunion";
+			sourceTree = "<group>";
+		};
+		C758503D2A6E286700AE21F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C758503E2A6E286700AE21F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C75B1C032B13AF8F00EF21D5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C1D2B13E90F00EF21D5 /* Mock */,
+				C75B1C112B13C47D00EF21D5 /* Auth */,
+				C75B1C0E2B13C09A00EF21D5 /* Error */,
+				C75B1C092B13B4F800EF21D5 /* Security */,
+				C75B1C042B13B1EB00EF21D5 /* Protocols */,
+				C75B1C072B13B32800EF21D5 /* APIConfig.swift */,
+				C75B1C162B13D87800EF21D5 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C75B1C042B13B1EB00EF21D5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C052B13B1FD00EF21D5 /* APIProviding.swift */,
+				C75B1C142B13D7D700EF21D5 /* APIClientProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C75B1C092B13B4F800EF21D5 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C0A2B13B50600EF21D5 /* JWT.swift */,
+				C75B1C0C2B13B6DF00EF21D5 /* KeychainService.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		C75B1C0E2B13C09A00EF21D5 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C0F2B13C0A800EF21D5 /* APIError.swift */,
+				C75B1C182B13DBE200EF21D5 /* KnownErrors.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C75B1C112B13C47D00EF21D5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C122B13C49300EF21D5 /* AuthAPIProvider.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C75B1C1D2B13E90F00EF21D5 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C202B13EA9600EF21D5 /* Mock Responses */,
+				C75B1C1E2B13E92600EF21D5 /* Mockable.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C75B1C202B13EA9600EF21D5 /* Mock Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */,
+			);
+			path = "Mock Responses";
+			sourceTree = "<group>";
+		};
+		C77BDC5D2AE0A3D400EFC9C3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC612AE0A47E00EFC9C3 /* Sign Up */,
+				C77BDC5E2AE0A42C00EFC9C3 /* Models */,
+				C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */,
+				C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C77BDC5E2AE0A42C00EFC9C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C77BDC612AE0A47E00EFC9C3 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC622AE0A49800EFC9C3 /* SignupView.swift */,
+				C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		C77BDC662AE0A98D00EFC9C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */,
+				C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C77BDC6A2AE0AA2700EFC9C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC6D2AE0AA4F00EFC9C3 /* Fonts */,
+				C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C77BDC6D2AE0AA4F00EFC9C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC742AE0AA7A00EFC9C3 /* Lato-Black.ttf */,
+				C77BDC722AE0AA7A00EFC9C3 /* Lato-BlackItalic.ttf */,
+				C77BDC7B2AE0AA7B00EFC9C3 /* Lato-Bold.ttf */,
+				C77BDC772AE0AA7A00EFC9C3 /* Lato-BoldItalic.ttf */,
+				C77BDC732AE0AA7A00EFC9C3 /* Lato-Hairline.ttf */,
+				C77BDC792AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf */,
+				C77BDC7A2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf */,
+				C77BDC782AE0AA7A00EFC9C3 /* Lato-HeavyItalic.ttf */,
+				C77BDC712AE0AA7A00EFC9C3 /* Lato-Italic.ttf */,
+				C77BDC702AE0AA7A00EFC9C3 /* Lato-Light.ttf */,
+				C77BDC752AE0AA7A00EFC9C3 /* Lato-LightItalic.ttf */,
+				C77BDC762AE0AA7A00EFC9C3 /* Lato-Medium.ttf */,
+				C77BDC7C2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf */,
+				C77BDC802AE0AA7B00EFC9C3 /* Lato-Regular.ttf */,
+				C77BDC7D2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf */,
+				C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */,
+				C77BDC7F2AE0AA7B00EFC9C3 /* Lato-Thin.ttf */,
+				C77BDC7E2AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf */,
+				C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C75850332A6E286600AE21F5 /* pauga family reunion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C75850422A6E286700AE21F5 /* Build configuration list for PBXNativeTarget "pauga family reunion" */;
+			buildPhases = (
+				C75850302A6E286600AE21F5 /* Sources */,
+				C75850312A6E286600AE21F5 /* Frameworks */,
+				C75850322A6E286600AE21F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pauga family reunion";
+			productName = "pauga family reunion";
+			productReference = C75850342A6E286600AE21F5 /* pauga family reunion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C758502C2A6E286600AE21F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C75850332A6E286600AE21F5 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C758502F2A6E286600AE21F5 /* Build configuration list for PBXProject "pauga family reunion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C758502B2A6E286600AE21F5;
+			productRefGroup = C75850352A6E286600AE21F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C75850332A6E286600AE21F5 /* pauga family reunion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C75850322A6E286600AE21F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77BDC862AE0AA7B00EFC9C3 /* Lato-Black.ttf in Resources */,
+				C77BDC912AE0AA7B00EFC9C3 /* Lato-Thin.ttf in Resources */,
+				C77BDC822AE0AA7B00EFC9C3 /* Lato-Light.ttf in Resources */,
+				C77BDC922AE0AA7B00EFC9C3 /* Lato-Regular.ttf in Resources */,
+				C77BDC8B2AE0AA7B00EFC9C3 /* Lato-HairlineItalic.ttf in Resources */,
+				C77BDC932AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf in Resources */,
+				C758503F2A6E286700AE21F5 /* Preview Assets.xcassets in Resources */,
+				C77BDC872AE0AA7B00EFC9C3 /* Lato-LightItalic.ttf in Resources */,
+				C77BDC882AE0AA7B00EFC9C3 /* Lato-Medium.ttf in Resources */,
+				C77BDC8A2AE0AA7B00EFC9C3 /* Lato-HeavyItalic.ttf in Resources */,
+				C77BDC8D2AE0AA7B00EFC9C3 /* Lato-Bold.ttf in Resources */,
+				C75B1C222B13EAC000EF21D5 /* _createUserMockResponse.json in Resources */,
+				C77BDC852AE0AA7B00EFC9C3 /* Lato-Hairline.ttf in Resources */,
+				C77BDC8F2AE0AA7B00EFC9C3 /* Lato-Semibold.ttf in Resources */,
+				C77BDC8E2AE0AA7B00EFC9C3 /* Lato-MediumItalic.ttf in Resources */,
+				C77BDC842AE0AA7B00EFC9C3 /* Lato-BlackItalic.ttf in Resources */,
+				C77BDC832AE0AA7B00EFC9C3 /* Lato-Italic.ttf in Resources */,
+				C77BDC8C2AE0AA7B00EFC9C3 /* Lato-Heavy.ttf in Resources */,
+				C758503C2A6E286700AE21F5 /* Assets.xcassets in Resources */,
+				C77BDC892AE0AA7B00EFC9C3 /* Lato-BoldItalic.ttf in Resources */,
+				C77BDC902AE0AA7B00EFC9C3 /* Lato-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C75850302A6E286600AE21F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75B1C0B2B13B50600EF21D5 /* JWT.swift in Sources */,
+				C77BDC972AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift in Sources */,
+				C77BDC952AE0E1E100EFC9C3 /* AuthenticationRootView.swift in Sources */,
+				C75B1C082B13B32800EF21D5 /* APIConfig.swift in Sources */,
+				C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */,
+				C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */,
+				C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */,
+				C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */,
+				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,
+				C75B1C102B13C0A800EF21D5 /* APIError.swift in Sources */,
+				C75B1C152B13D7D700EF21D5 /* APIClientProtocol.swift in Sources */,
+				C75B1C132B13C49300EF21D5 /* AuthAPIProvider.swift in Sources */,
+				C75B1C192B13DBE200EF21D5 /* KnownErrors.swift in Sources */,
+				C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */,
+				C75B1C062B13B1FD00EF21D5 /* APIProviding.swift in Sources */,
+				C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */,
+				C75B1C0D2B13B6DF00EF21D5 /* KeychainService.swift in Sources */,
+				C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */,
+				C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */,
+				C75B1C1F2B13E92600EF21D5 /* Mockable.swift in Sources */,
+				C75B1C172B13D87800EF21D5 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C75850402A6E286700AE21F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C75850412A6E286700AE21F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C75850432A6E286700AE21F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pauga family reunion/Preview Content\"";
+				DEVELOPMENT_TEAM = FF38VL3JFN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pauga-family-reunion-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pauga Family Reunion";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.sbsoft.pauga-family-reunion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C75850442A6E286700AE21F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pauga family reunion/Preview Content\"";
+				DEVELOPMENT_TEAM = FF38VL3JFN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pauga-family-reunion-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pauga Family Reunion";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.sbsoft.pauga-family-reunion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C758502F2A6E286600AE21F5 /* Build configuration list for PBXProject "pauga family reunion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75850402A6E286700AE21F5 /* Debug */,
+				C75850412A6E286700AE21F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C75850422A6E286700AE21F5 /* Build configuration list for PBXNativeTarget "pauga family reunion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75850432A6E286700AE21F5 /* Debug */,
+				C75850442A6E286700AE21F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C758502C2A6E286600AE21F5 /* Project object */;
+}
