@@ -49,6 +49,8 @@
 		C77BDC932AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */; };
 		C77BDC952AE0E1E100EFC9C3 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */; };
 		C77BDC972AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */; };
+		C7B7BE862B24270300CC9781 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7BE852B24270300CC9781 /* UserService.swift */; };
+		C7B7BE892B242CB500CC9781 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7BE882B242CB500CC9781 /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
 		C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootViewModel.swift; sourceTree = "<group>"; };
+		C7B7BE852B24270300CC9781 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		C7B7BE882B242CB500CC9781 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +137,9 @@
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
 				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
 				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
+				C7B7BE842B2426DF00CC9781 /* UserService */,
 				C75B1C032B13AF8F00EF21D5 /* Networking */,
+				C7B7BE872B242C9000CC9781 /* Secure */,
 				C77BDC6A2AE0AA2700EFC9C3 /* Resources */,
 				C77BDC662AE0A98D00EFC9C3 /* Extensions */,
 				C758503D2A6E286700AE21F5 /* Preview Content */,
@@ -219,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				C77BDC612AE0A47E00EFC9C3 /* Sign Up */,
-				C77BDC5E2AE0A42C00EFC9C3 /* Models */,
 				C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */,
 				C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */,
 			);
@@ -285,6 +290,23 @@
 				C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C7B7BE842B2426DF00CC9781 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				C77BDC5E2AE0A42C00EFC9C3 /* Models */,
+				C7B7BE852B24270300CC9781 /* UserService.swift */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
+		C7B7BE872B242C9000CC9781 /* Secure */ = {
+			isa = PBXGroup;
+			children = (
+				C7B7BE882B242CB500CC9781 /* KeychainManager.swift */,
+			);
+			name = Secure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +404,7 @@
 				C75B1C082B13B32800EF21D5 /* APIConfig.swift in Sources */,
 				C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */,
 				C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */,
+				C7B7BE862B24270300CC9781 /* UserService.swift in Sources */,
 				C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */,
 				C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */,
 				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,
@@ -392,6 +415,7 @@
 				C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */,
 				C75B1C062B13B1FD00EF21D5 /* APIProviding.swift in Sources */,
 				C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */,
+				C7B7BE892B242CB500CC9781 /* KeychainManager.swift in Sources */,
 				C75B1C0D2B13B6DF00EF21D5 /* KeychainService.swift in Sources */,
 				C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */,
 				C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */,

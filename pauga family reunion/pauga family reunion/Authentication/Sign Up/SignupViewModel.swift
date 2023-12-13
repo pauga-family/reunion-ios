@@ -37,18 +37,17 @@ class SignupViewModel : ObservableObject {
                 validatePassword() else {
             return
         }
-        signIn()
+        signUserUp()
     }
 
     // MARK: - Private
     
-    private func signIn() {
+    private func signUserUp() {
         Task {
             let endpoint = AuthAPIProvider.createUser(email: emailAddress, firstName: firstName, lastName: lastName, password: password)
             do {
-                let user = try await apiClient.request(endpoint: endpoint, responseModel: UserModel.self)
+                let userLoginModel = try await apiClient.request(endpoint: endpoint, responseModel: UserLoginModel.self)
                 await MainActor.run {
-                    print(user)
                     self.loadingState = .finished
                 }
             } catch let error as APIError {
