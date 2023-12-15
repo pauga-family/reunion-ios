@@ -30,6 +30,7 @@ extension APIProviding {
     var scheme: String {
         APIConfig.shared.scheme
     }
+    
     var baseURL: String {
         APIConfig.shared.baseURL
     }

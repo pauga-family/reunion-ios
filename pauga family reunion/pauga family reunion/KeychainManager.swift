@@ -30,7 +30,7 @@ class KeychainManager {
         ] as [String : Any]
         
         var dataTypeRef: AnyObject?
-        let status = OSStatus = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
+        let status: OSStatus = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
         
         if status == noErr {
             return dataTypeRef as! Data?

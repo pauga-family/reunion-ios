@@ -8,28 +8,21 @@
 import Foundation
 
 protocol UserServicable {
-    func setCurrentUser(userLoginModel: UserLoginModel)
     func logUserOut()
     func getCurrentUser() -> UserModel?
     func signUp(firstName: String, lastName: String, email: String, password: String) async throws
-    func setToken(token: String)
 }
 
 class UserService : UserServicable {
     static var shared = UserService()
-    private var user: UserModel?
+    private var user: UserModel? = nil
+    private var token: String?
     private let client: APIClientProtocol = APIClient()
     
-    private init() {
-        self.user = nil
-    }
-    
-    func setCurrentUser(userLoginModel: UserLoginModel) {
-        
-    }
+    private init() {}
     
     func logUserOut() {
-        
+        self.user = nil
     }
     
     func getCurrentUser() -> UserModel? {
@@ -40,10 +33,15 @@ class UserService : UserServicable {
         let endpoint = AuthAPIProvider.createUser(email: email, firstName: firstName, lastName: lastName, password: password)
         let userLoginModel = try await client.request(endpoint: endpoint, responseModel: UserLoginModel.self)
         setToken(token: userLoginModel.token)
-        user = UserModel(with: userLoginModel)
+        setCurrentUser(userLoginModel: userLoginModel)
     }
     
-    func setToken(token: String) {
+    // MARK: - Private
+    private func setCurrentUser(userLoginModel: UserLoginModel) {
+        self.user = UserModel(with: userLoginModel)
+    }
+    
+    private func setToken(token: String) {
         let jwtData = token.data(using: String.Encoding.utf8)!
         let saveStatus = KeychainManager.save(key: "userJWT", data: jwtData)
         
@@ -54,7 +52,7 @@ class UserService : UserServicable {
         }
     }
     
-    func fetchToken() -> String? {
+    private func fetchToken() -> String? {
         guard let tokenData = KeychainManager.load(key: "userJWT") else {
             return nil
         }

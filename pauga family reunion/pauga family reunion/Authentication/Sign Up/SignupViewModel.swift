@@ -23,11 +23,7 @@ class SignupViewModel : ObservableObject {
     @Published var errorMessage: String = ""
 
     // MARK: - Private variables
-    private let apiClient: APIClientProtocol
-
-    init(apiClient: APIClientProtocol) {
-        self.apiClient = apiClient
-    }
+    private let userService: UserServicable = UserService.shared
 
     func ctaTapped() {
         loadingState = .loading
@@ -44,9 +40,8 @@ class SignupViewModel : ObservableObject {
     
     private func signUserUp() {
         Task {
-            let endpoint = AuthAPIProvider.createUser(email: emailAddress, firstName: firstName, lastName: lastName, password: password)
             do {
-                let userLoginModel = try await apiClient.request(endpoint: endpoint, responseModel: UserLoginModel.self)
+                try await userService.signUp(firstName: firstName, lastName: lastName, email: emailAddress, password: password)
                 await MainActor.run {
                     self.loadingState = .finished
                 }

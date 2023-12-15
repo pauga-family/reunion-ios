@@ -162,5 +162,5 @@ private extension SignupView {
 }
 
 #Preview {
-    SignupView(viewModel: SignupViewModel(apiClient: MockAPIClient()))
+    SignupView(viewModel: SignupViewModel())
 }

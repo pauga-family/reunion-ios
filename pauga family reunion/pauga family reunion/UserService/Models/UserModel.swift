@@ -34,4 +34,9 @@ struct UserLoginModel : Codable {
     let firstName: String
     let lastName: String
     let email: String
+    
+    enum CodingKeys : String, CodingKey {
+        case token = "access_token"
+        case id, firstName, lastName, email
+    }
 }
