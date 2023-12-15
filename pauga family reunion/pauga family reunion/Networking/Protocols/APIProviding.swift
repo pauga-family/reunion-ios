@@ -1,5 +1,5 @@
 //
-//  EndpointProvider.swift
+//  APIProviding.swift
 //  pauga family reunion
 //
 //  Created by Justin Pauga on 11/26/23.
@@ -30,41 +30,43 @@ extension APIProviding {
     var scheme: String {
         APIConfig.shared.scheme
     }
+    
     var baseURL: String {
         APIConfig.shared.baseURL
     }
-    
+
     var token: String {
         APIConfig.shared.token?.token ?? ""
     }
-    
+
     func asURLRequest() throws -> URLRequest {
         var urlComponents = URLComponents()
         urlComponents.scheme = scheme
         urlComponents.host = baseURL
         urlComponents.path = path
+        urlComponents.port = 8000
         if let queryItems {
             urlComponents.queryItems = queryItems
         }
         guard let url = urlComponents.url else {
-            throw ApiError(errorCode: "ERROR-0", message: "URL Error")
+            throw APIError(errorCode: "ERROR-0", message: "URL Error")
         }
-        
+
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.setValue("true", forHTTPHeaderField: "X-Use-Cache")
-        
+
         if !token.isEmpty {
             urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorizaion")
         }
-        
+
         if let body {
             do {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
             } catch {
-                throw ApiError(errorCode: "ERROR-0", message: "Error encoding http body")
+                throw APIError(errorCode: "ERROR-0", message: "Error encoding http body")
             }
         }
         return urlRequest

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ApiError: Error {
+struct APIError: Error, Equatable {
 
     var statusCode: Int!
     let errorCode: String
@@ -30,7 +30,7 @@ struct ApiError: Error {
     }
 }
 
-extension ApiError: Decodable {
+extension APIError: Decodable {
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
