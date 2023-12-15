@@ -12,7 +12,19 @@ enum SignInLoadingState {
 }
 
 class SignInViewModel : ObservableObject {
-    @Published var userName = ""
+    @Published var emailAddress = ""
     @Published var password = ""
     @Published var loadingState: SignInLoadingState = .loading
+    
+    func ctaTapped() {
+        print("Sign In Button tapped")
+        test("tuli")
+    }
+    
+    func test(_ name: String) {
+        print(name)
+    }
 }
+
+
+
