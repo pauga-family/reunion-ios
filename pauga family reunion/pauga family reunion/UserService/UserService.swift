@@ -11,6 +11,7 @@ protocol UserServicable {
     func logUserOut()
     func getCurrentUser() -> UserModel?
     func signUp(firstName: String, lastName: String, email: String, password: String) async throws
+    func signIn(email: String, password: String) async throws
 }
 
 class UserService : UserServicable {
@@ -34,6 +35,10 @@ class UserService : UserServicable {
         let userLoginModel = try await client.request(endpoint: endpoint, responseModel: UserLoginModel.self)
         setToken(token: userLoginModel.token)
         setCurrentUser(userLoginModel: userLoginModel)
+    }
+    
+    func signIn(email: String, password: String) async throws {
+        // signIn here
     }
     
     // MARK: - Private
