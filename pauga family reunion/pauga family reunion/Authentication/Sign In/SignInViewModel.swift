@@ -17,9 +17,9 @@ class SignInViewModel : ObservableObject {
     @Published var loadingState: SignInLoadingState = .finished
     @Published var showErrorAlert: Bool = false
     @Published var errorMessage: String = ""
+    private let userService: UserServicable = UserService.shared
     
     func ctaTapped() {
-        print("Sign In Button tapped")
         loadingState = .loading
         guard validateEmail(),
               validatePassword() else {
@@ -27,8 +27,6 @@ class SignInViewModel : ObservableObject {
         }
         signUserIn()
     }
-    
-    private let userService: UserServicable = UserService.shared
     
     private func signUserIn() {
         Task {
@@ -45,7 +43,7 @@ class SignInViewModel : ObservableObject {
     
     private func validateEmail() -> Bool {
         if (emailAddress.count < 2 || emailAddress.count > 40) {
-            let error = KnownErrors.validationError(message: "First and last name must be between 2 and 40 characters").error
+            let error = KnownErrors.validationError(message: "Email address must be greater than 2 characters and less than 40").error
             showErrorAlert(error: error)
             return false
         }
