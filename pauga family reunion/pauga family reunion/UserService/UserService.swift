@@ -38,7 +38,10 @@ class UserService : UserServicable {
     }
     
     func signIn(email: String, password: String) async throws {
-        // signIn here
+        let endpoint = AuthAPIProvider.signIn(email: email, password: password)
+        let userLoginModel = try await client.request(endpoint: endpoint, responseModel: UserLoginModel.self)
+        setToken(token: userLoginModel.token)
+        setCurrentUser(userLoginModel: userLoginModel)
     }
     
     // MARK: - Private
