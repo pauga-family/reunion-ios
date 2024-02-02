@@ -22,6 +22,9 @@ struct SignInView: View {
         .background(
             LinearGradient(gradient: Gradients.extraWhiteExtraPrimaryBlack.gradient, startPoint: .topLeading, endPoint: .bottomTrailing)
         )
+        .alert(isPresented: $viewModel.showErrorAlert) {
+            Alert(title: Text("Error"), message: Text(viewModel.errorMessage), dismissButton: .default(Text("Ok")))
+        }
     }
 }
 
