@@ -9,17 +9,22 @@ import Foundation
 
 enum AuthAPIProvider: APIProviding {
     case createUser(email: String, firstName: String, lastName: String, password: String)
-
+    case signIn(email: String, password: String)
+    
     var path: String {
         switch self {
         case .createUser:
             return "/auth/create-user"
+        case .signIn:
+            return "/auth/login"
         }
     }
 
     var method: RequestMethod {
         switch self {
         case .createUser:
+            return .post
+        case .signIn:
             return .post
         }
     }
@@ -40,6 +45,11 @@ enum AuthAPIProvider: APIProviding {
                 "lastName": lastName,
                 "password": password
             ]
+        case .signIn(let email, let password):
+            return [
+                "email": email,
+                "password": password
+            ]
         }
     }
 
@@ -47,6 +57,8 @@ enum AuthAPIProvider: APIProviding {
         switch self {
         case .createUser:
             return "_createUserMockResponse"
+        case .signIn:
+            return nil
         }
     }
 }
