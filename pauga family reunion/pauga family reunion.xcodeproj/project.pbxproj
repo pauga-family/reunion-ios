@@ -26,8 +26,8 @@
 		C75B1C1F2B13E92600EF21D5 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B1C1E2B13E92600EF21D5 /* Mockable.swift */; };
 		C75B1C222B13EAC000EF21D5 /* _createUserMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */; };
 		C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */; };
-		C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC622AE0A49800EFC9C3 /* SignupView.swift */; };
-		C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */; };
+		C77BDC632AE0A49800EFC9C3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC622AE0A49800EFC9C3 /* SignUpView.swift */; };
+		C77BDC652AE0A5B300EFC9C3 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC642AE0A5B300EFC9C3 /* SignUpViewModel.swift */; };
 		C77BDC682AE0A9A300EFC9C3 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */; };
 		C77BDC6C2AE0AA3A00EFC9C3 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */; };
 		C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */; };
@@ -79,8 +79,8 @@
 		C75B1C1E2B13E92600EF21D5 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		C75B1C212B13EAC000EF21D5 /* _createUserMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = _createUserMockResponse.json; sourceTree = "<group>"; };
 		C77BDC5F2AE0A43E00EFC9C3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		C77BDC622AE0A49800EFC9C3 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		C77BDC622AE0A49800EFC9C3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C77BDC642AE0A5B300EFC9C3 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		C77BDC6B2AE0AA3A00EFC9C3 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		C77BDC6E2AE0AA6200EFC9C3 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -261,8 +261,8 @@
 		C77BDC612AE0A47E00EFC9C3 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				C77BDC622AE0A49800EFC9C3 /* SignupView.swift */,
-				C77BDC642AE0A5B300EFC9C3 /* SignupViewModel.swift */,
+				C77BDC622AE0A49800EFC9C3 /* SignUpView.swift */,
+				C77BDC642AE0A5B300EFC9C3 /* SignUpViewModel.swift */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -432,10 +432,10 @@
 				C75B1C082B13B32800EF21D5 /* APIConfig.swift in Sources */,
 				F7254D552B2BFD2100F10816 /* SignInViewModel.swift in Sources */,
 				C77BDC6F2AE0AA6200EFC9C3 /* Fonts.swift in Sources */,
-				C77BDC632AE0A49800EFC9C3 /* SignupView.swift in Sources */,
+				C77BDC632AE0A49800EFC9C3 /* SignUpView.swift in Sources */,
 				C7B7BE862B24270300CC9781 /* UserService.swift in Sources */,
 				C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */,
-				C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */,
+				C77BDC652AE0A5B300EFC9C3 /* SignUpViewModel.swift in Sources */,
 				C74017062BE8ADAE00A37AE5 /* HomeViewModel.swift in Sources */,
 				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,
 				C75B1C102B13C0A800EF21D5 /* APIError.swift in Sources */,

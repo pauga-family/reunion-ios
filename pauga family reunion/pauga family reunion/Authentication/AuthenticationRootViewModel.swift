@@ -16,8 +16,8 @@ final class AuthenticationRootViewModel : ObservableObject {
         SignInViewModel(authenticationDelegate: delegate)
     }
     
-    var signUpViewModel: SignupViewModel {
-        SignupViewModel(authenticationDelegate: delegate)
+    var signUpViewModel: SignUpViewModel {
+        SignUpViewModel(authenticationDelegate: delegate)
     }
     private let delegate: AuthenticationDelegate
     

@@ -7,18 +7,18 @@
 
 import Foundation
 
-enum SignupLoadingState {
+enum SignUpLoadingState {
     case loading, finished
 }
 
-final class SignupViewModel : ObservableObject {
+final class SignUpViewModel : ObservableObject {
     // MARK: - Published variables
     @Published var firstName = ""
     @Published var lastName = ""
     @Published var emailAddress = ""
     @Published var password = ""
     @Published var passwordConfirmation = ""
-    @Published var loadingState: SignupLoadingState = .finished
+    @Published var loadingState: SignUpLoadingState = .finished
     @Published var showErrorAlert: Bool = false
     @Published var errorMessage: String = ""
 

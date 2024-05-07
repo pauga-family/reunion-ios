@@ -51,7 +51,7 @@ private extension AuthenticationRootView {
     }
     
     var signUpButton: some View {
-        NavigationLink(destination: SignupView(viewModel: viewModel.signUpViewModel)) {
+        NavigationLink(destination: SignUpView(viewModel: viewModel.signUpViewModel)) {
             Text("Sign up")
                 .font(LatoFont.regular.font(size: 16))
                 .padding()

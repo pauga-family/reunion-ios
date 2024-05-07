@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SignupView: View {
-    @ObservedObject var viewModel: SignupViewModel
+struct SignUpView: View {
+    @ObservedObject var viewModel: SignUpViewModel
     var body: some View {
         VStack(alignment: .center) {
             titleSection
@@ -35,7 +35,7 @@ struct SignupView: View {
     }
 }
 
-private extension SignupView {
+private extension SignUpView {
     var titleSection: some View {
         Text("Sign Up")
             .font(LatoFont.bold.font(size: 40))
@@ -162,5 +162,5 @@ private extension SignupView {
 }
 
 #Preview {
-    SignupView(viewModel: SignupViewModel(authenticationDelegate: HomeViewModel(userService: UserService.shared)))
+    SignUpView(viewModel: SignUpViewModel(authenticationDelegate: HomeViewModel(userService: UserService.shared)))
 }
