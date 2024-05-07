@@ -13,9 +13,13 @@ struct SignInView: View {
         VStack(alignment: .center) {
             titleSection
             Spacer()
-            emailField
-            passwordField
-            submitButton
+            if viewModel.loadingState == .loading {
+                ProgressView()
+            } else {
+                emailField
+                passwordField
+                submitButton
+            }
         }
         .padding()
         .padding([.bottom, .horizontal], 16)
@@ -95,5 +99,5 @@ private extension SignInView {
 }
 
 #Preview {
-    SignInView(viewModel: SignInViewModel())
+    SignInView(viewModel: SignInViewModel(authenticationDelegate: HomeViewModel(userService: UserService.shared)))
 }

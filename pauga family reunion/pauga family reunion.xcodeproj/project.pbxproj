@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74017042BE8ADA300A37AE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74017032BE8ADA300A37AE5 /* HomeView.swift */; };
+		C74017062BE8ADAE00A37AE5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74017052BE8ADAE00A37AE5 /* HomeViewModel.swift */; };
 		C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */; };
 		C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75850392A6E286600AE21F5 /* ContentView.swift */; };
 		C758503C2A6E286700AE21F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C758503B2A6E286700AE21F5 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C74017032BE8ADA300A37AE5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C74017052BE8ADAE00A37AE5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C75850342A6E286600AE21F5 /* pauga family reunion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pauga family reunion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pauga_family_reunionApp.swift; sourceTree = "<group>"; };
 		C75850392A6E286600AE21F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74017022BE8AD8E00A37AE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C74017032BE8ADA300A37AE5 /* HomeView.swift */,
+				C74017052BE8ADAE00A37AE5 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		C758502B2A6E286600AE21F5 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +153,7 @@
 				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
 				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
+				C74017022BE8AD8E00A37AE5 /* Home */,
 				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
 				C7B7BE842B2426DF00CC9781 /* UserService */,
 				C75B1C032B13AF8F00EF21D5 /* Networking */,
@@ -422,11 +436,13 @@
 				C7B7BE862B24270300CC9781 /* UserService.swift in Sources */,
 				C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */,
 				C77BDC652AE0A5B300EFC9C3 /* SignupViewModel.swift in Sources */,
+				C74017062BE8ADAE00A37AE5 /* HomeViewModel.swift in Sources */,
 				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,
 				C75B1C102B13C0A800EF21D5 /* APIError.swift in Sources */,
 				C75B1C152B13D7D700EF21D5 /* APIClientProtocol.swift in Sources */,
 				C75B1C132B13C49300EF21D5 /* AuthAPIProvider.swift in Sources */,
 				C75B1C192B13DBE200EF21D5 /* KnownErrors.swift in Sources */,
+				C74017042BE8ADA300A37AE5 /* HomeView.swift in Sources */,
 				C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */,
 				C75B1C062B13B1FD00EF21D5 /* APIProviding.swift in Sources */,
 				C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */,
@@ -443,7 +459,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C75850402A6E286700AE21F5 /* Debug */ = {
+		C74017002BE8AA1500A37AE5 /* Debug (local) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -501,7 +517,97 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug (local)";
+		};
+		C74017012BE8AA1500A37AE5 /* Debug (local) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pauga family reunion/Preview Content\"";
+				DEVELOPMENT_TEAM = FF38VL3JFN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pauga-family-reunion-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pauga Family Reunion";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.sbsoft.pauga-family-reunion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (local)";
+		};
+		C75850402A6E286700AE21F5 /* Debug (Staging) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Staging)";
 		};
 		C75850412A6E286700AE21F5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -557,7 +663,7 @@
 			};
 			name = Release;
 		};
-		C75850432A6E286700AE21F5 /* Debug */ = {
+		C75850432A6E286700AE21F5 /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -585,7 +691,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Debug (Staging)";
 		};
 		C75850442A6E286700AE21F5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -623,7 +729,8 @@
 		C758502F2A6E286600AE21F5 /* Build configuration list for PBXProject "pauga family reunion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C75850402A6E286700AE21F5 /* Debug */,
+				C75850402A6E286700AE21F5 /* Debug (Staging) */,
+				C74017002BE8AA1500A37AE5 /* Debug (local) */,
 				C75850412A6E286700AE21F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -632,7 +739,8 @@
 		C75850422A6E286700AE21F5 /* Build configuration list for PBXNativeTarget "pauga family reunion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C75850432A6E286700AE21F5 /* Debug */,
+				C75850432A6E286700AE21F5 /* Debug (Staging) */,
+				C74017012BE8AA1500A37AE5 /* Debug (local) */,
 				C75850442A6E286700AE21F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

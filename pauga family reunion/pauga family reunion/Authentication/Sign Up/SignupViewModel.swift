@@ -24,7 +24,12 @@ class SignupViewModel : ObservableObject {
 
     // MARK: - Private variables
     private let userService: UserServicable = UserService.shared
-
+    private let authenticationDelegate: AuthenticationDelegate
+    
+    init(authenticationDelegate: AuthenticationDelegate) {
+        self.authenticationDelegate = authenticationDelegate
+    }
+    
     func ctaTapped() {
         loadingState = .loading
         guard validateName(name: firstName),
@@ -44,6 +49,7 @@ class SignupViewModel : ObservableObject {
                 try await userService.signUp(firstName: firstName, lastName: lastName, email: emailAddress, password: password)
                 await MainActor.run {
                     self.loadingState = .finished
+                    authenticationDelegate.didSuccessfullyLogIn()
                 }
             } catch let error as APIError {
                 showErrorAlert(error: error)

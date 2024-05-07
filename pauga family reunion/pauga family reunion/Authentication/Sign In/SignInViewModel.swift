@@ -12,12 +12,20 @@ enum SignInLoadingState {
 }
 
 class SignInViewModel : ObservableObject {
+    // MARK: - Published Variables
     @Published var emailAddress = ""
     @Published var password = ""
     @Published var loadingState: SignInLoadingState = .finished
     @Published var showErrorAlert: Bool = false
     @Published var errorMessage: String = ""
+    
+    // MARK: - Private Variables
     private let userService: UserServicable = UserService.shared
+    private let authenticationDelegate: AuthenticationDelegate
+    
+    init(authenticationDelegate: AuthenticationDelegate) {
+        self.authenticationDelegate = authenticationDelegate
+    }
     
     func ctaTapped() {
         loadingState = .loading
@@ -34,6 +42,7 @@ class SignInViewModel : ObservableObject {
                 try await userService.signIn(email: emailAddress, password: password)
                 await MainActor.run {
                     self.loadingState = .finished
+                    authenticationDelegate.didSuccessfullyLogIn()
                 }
             } catch let error as APIError {
                 showErrorAlert(error: error)

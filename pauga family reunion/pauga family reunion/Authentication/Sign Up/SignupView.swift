@@ -162,5 +162,5 @@ private extension SignupView {
 }
 
 #Preview {
-    SignupView(viewModel: SignupViewModel())
+    SignupView(viewModel: SignupViewModel(authenticationDelegate: HomeViewModel(userService: UserService.shared)))
 }
