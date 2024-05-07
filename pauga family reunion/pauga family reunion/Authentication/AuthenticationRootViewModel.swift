@@ -11,7 +11,7 @@ protocol AuthenticationDelegate {
     func didSuccessfullyLogIn()
 }
 
-class AuthenticationRootViewModel : ObservableObject {
+final class AuthenticationRootViewModel : ObservableObject {
     var signInViewModel: SignInViewModel {
         SignInViewModel(authenticationDelegate: delegate)
     }
