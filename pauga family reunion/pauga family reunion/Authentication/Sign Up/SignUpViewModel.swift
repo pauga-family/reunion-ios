@@ -11,7 +11,7 @@ enum SignUpLoadingState {
     case loading, finished
 }
 
-final class SignupViewModel : ObservableObject {
+final class SignUpViewModel : ObservableObject {
     // MARK: - Published variables
     @Published var firstName = ""
     @Published var lastName = ""
