@@ -7,6 +7,21 @@
 
 import Foundation
 
-class AuthenticationRootViewModel : ObservableObject {
+protocol AuthenticationDelegate {
+    func didSuccessfullyLogIn()
+}
+
+final class AuthenticationRootViewModel : ObservableObject {
+    var signInViewModel: SignInViewModel {
+        SignInViewModel(authenticationDelegate: delegate)
+    }
     
+    var signUpViewModel: SignUpViewModel {
+        SignUpViewModel(authenticationDelegate: delegate)
+    }
+    private let delegate: AuthenticationDelegate
+    
+    init(delegate: AuthenticationDelegate) {
+        self.delegate = delegate
+    }
 }

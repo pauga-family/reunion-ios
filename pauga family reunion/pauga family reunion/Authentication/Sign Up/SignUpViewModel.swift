@@ -7,24 +7,29 @@
 
 import Foundation
 
-enum SignupLoadingState {
+enum SignUpLoadingState {
     case loading, finished
 }
 
-class SignupViewModel : ObservableObject {
+final class SignUpViewModel : ObservableObject {
     // MARK: - Published variables
     @Published var firstName = ""
     @Published var lastName = ""
     @Published var emailAddress = ""
     @Published var password = ""
     @Published var passwordConfirmation = ""
-    @Published var loadingState: SignupLoadingState = .finished
+    @Published var loadingState: SignUpLoadingState = .finished
     @Published var showErrorAlert: Bool = false
     @Published var errorMessage: String = ""
 
     // MARK: - Private variables
     private let userService: UserServicable = UserService.shared
-
+    private let authenticationDelegate: AuthenticationDelegate
+    
+    init(authenticationDelegate: AuthenticationDelegate) {
+        self.authenticationDelegate = authenticationDelegate
+    }
+    
     func ctaTapped() {
         loadingState = .loading
         guard validateName(name: firstName),
@@ -44,6 +49,7 @@ class SignupViewModel : ObservableObject {
                 try await userService.signUp(firstName: firstName, lastName: lastName, email: emailAddress, password: password)
                 await MainActor.run {
                     self.loadingState = .finished
+                    authenticationDelegate.didSuccessfullyLogIn()
                 }
             } catch let error as APIError {
                 showErrorAlert(error: error)

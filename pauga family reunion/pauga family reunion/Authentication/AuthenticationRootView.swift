@@ -51,7 +51,7 @@ private extension AuthenticationRootView {
     }
     
     var signUpButton: some View {
-        NavigationLink(destination: SignupView(viewModel: SignupViewModel())) {
+        NavigationLink(destination: SignUpView(viewModel: viewModel.signUpViewModel)) {
             Text("Sign up")
                 .font(LatoFont.regular.font(size: 16))
                 .padding()
@@ -67,7 +67,7 @@ private extension AuthenticationRootView {
     }
     
     var loginButton: some View {
-        NavigationLink(destination: SignInView(viewModel: SignInViewModel())) {
+        NavigationLink(destination: SignInView(viewModel: viewModel.signInViewModel)) {
             Text("Log in")
                 .font(LatoFont.regular.font(size: 16))
                 .padding()
@@ -82,5 +82,5 @@ private extension AuthenticationRootView {
 }
 
 #Preview {
-    AuthenticationRootView(viewModel: AuthenticationRootViewModel())
+    AuthenticationRootView(viewModel: AuthenticationRootViewModel(delegate: HomeViewModel(userService: UserService.shared)))
 }
