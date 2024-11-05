@@ -90,7 +90,6 @@ private extension SignInView {
                 .foregroundColor(Color.onColor)
                 .padding()
         }
-        
         .frame(maxWidth: .infinity)
         .background(LinearGradient(gradient: Gradients.secondaryToTertiary.gradient, startPoint: .leading, endPoint: .trailing))
         .clipShape(Capsule())

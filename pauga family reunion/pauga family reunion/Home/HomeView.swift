@@ -11,7 +11,12 @@ struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     var body: some View {
         if viewModel.userLoggedIn {
-            Text("User logged in successfully")
+            NavigationView {
+                VStack {
+                    Text("User logged in successfully")
+                    NavigationLink("User details", destination: UserDetailView(user: UserService.shared.getCurrentUser()!))
+                }
+            }
         } else {
             AuthenticationRootView(viewModel: viewModel.authenticationRootViewModel)
         }
