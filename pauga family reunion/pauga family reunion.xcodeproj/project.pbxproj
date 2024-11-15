@@ -53,6 +53,9 @@
 		C77BDC932AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */; };
 		C77BDC952AE0E1E100EFC9C3 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */; };
 		C77BDC972AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */; };
+		C7842C0F2CDDA009002EAEED /* CalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7842C0E2CDDA009002EAEED /* CalendarWeekView.swift */; };
+		C7842C112CDDA4BC002EAEED /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7842C102CDDA4BC002EAEED /* Date+Extensions.swift */; };
+		C7842C132CE58DC6002EAEED /* CalendarWeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7842C122CE58DC6002EAEED /* CalendarWeekViewModel.swift */; };
 		C7B7BE862B24270300CC9781 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7BE852B24270300CC9781 /* UserService.swift */; };
 		C7B7BE892B242CB500CC9781 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7BE882B242CB500CC9781 /* KeychainManager.swift */; };
 		C7C119C92CD83C0E000B12C4 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C119C82CD83C0E000B12C4 /* UserDetailView.swift */; };
@@ -116,6 +119,9 @@
 		C77BDC812AE0AA7B00EFC9C3 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		C77BDC942AE0E1E100EFC9C3 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
 		C77BDC962AE0E1F000EFC9C3 /* AuthenticationRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootViewModel.swift; sourceTree = "<group>"; };
+		C7842C0E2CDDA009002EAEED /* CalendarWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeekView.swift; sourceTree = "<group>"; };
+		C7842C102CDDA4BC002EAEED /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		C7842C122CE58DC6002EAEED /* CalendarWeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeekViewModel.swift; sourceTree = "<group>"; };
 		C7B7BE852B24270300CC9781 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		C7B7BE882B242CB500CC9781 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		C7C119C82CD83C0E000B12C4 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 		C74017022BE8AD8E00A37AE5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C7C119D22CD9A943000B12C4 /* Views */,
 				C74017032BE8ADA300A37AE5 /* HomeView.swift */,
 				C74017052BE8ADAE00A37AE5 /* HomeViewModel.swift */,
 			);
@@ -306,6 +313,7 @@
 				C7C119CA2CD83EA4000B12C4 /* View+Extensions.swift */,
 				C77BDC672AE0A9A300EFC9C3 /* Color+Extensions.swift */,
 				C75B1C1A2B13E0D100EF21D5 /* Notification+Extensions.swift */,
+				C7842C102CDDA4BC002EAEED /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -346,6 +354,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C7842C0D2CDD9FEF002EAEED /* Timeline Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7842C0E2CDDA009002EAEED /* CalendarWeekView.swift */,
+				C7842C122CE58DC6002EAEED /* CalendarWeekViewModel.swift */,
+			);
+			path = "Timeline Views";
+			sourceTree = "<group>";
+		};
 		C7B7BE842B2426DF00CC9781 /* UserService */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +386,14 @@
 				C7C119CD2CD83F19000B12C4 /* RoundedCorner.swift */,
 			);
 			path = "View Helpers";
+			sourceTree = "<group>";
+		};
+		C7C119D22CD9A943000B12C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7842C0D2CDD9FEF002EAEED /* Timeline Views */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C7E492022C00221700544CB3 /* Debug */ = {
@@ -512,10 +537,13 @@
 				C740170D2BE9BEF800A37AE5 /* UserDetailEditViewModel.swift in Sources */,
 				C7E492092C00243900544CB3 /* DebugSetting.swift in Sources */,
 				C75B1C192B13DBE200EF21D5 /* KnownErrors.swift in Sources */,
+				C7842C132CE58DC6002EAEED /* CalendarWeekViewModel.swift in Sources */,
 				C74017042BE8ADA300A37AE5 /* HomeView.swift in Sources */,
 				C77BDC602AE0A43E00EFC9C3 /* UserModel.swift in Sources */,
 				C7C119D12CD997A2000B12C4 /* UserDetailListItemView.swift in Sources */,
 				C75B1C062B13B1FD00EF21D5 /* APIProviding.swift in Sources */,
+				C7842C0F2CDDA009002EAEED /* CalendarWeekView.swift in Sources */,
+				C7842C112CDDA4BC002EAEED /* Date+Extensions.swift in Sources */,
 				C75850382A6E286600AE21F5 /* pauga_family_reunionApp.swift in Sources */,
 				C7B7BE892B242CB500CC9781 /* KeychainManager.swift in Sources */,
 				C75B1C0D2B13B6DF00EF21D5 /* KeychainService.swift in Sources */,

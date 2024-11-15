@@ -13,13 +13,42 @@ struct HomeView: View {
         if viewModel.userLoggedIn {
             NavigationView {
                 VStack {
-                    Text("User logged in successfully")
-                    NavigationLink("User details", destination: UserDetailView(user: UserService.shared.getCurrentUser()!))
+                    loggedInView
                 }
+                .padding(.horizontal, 16)
             }
         } else {
             AuthenticationRootView(viewModel: viewModel.authenticationRootViewModel)
         }
+    }
+}
+
+private extension HomeView {
+    var loggedInView: some View {
+            VStack {
+                headerView
+                    .padding(.bottom, 16)
+                CalendarWeekView(viewModel: CalendarWeekViewModel())
+                Spacer()
+            }
+    }
+    
+    var headerView: some View {
+        HStack {
+            Text("Hello \(viewModel.user?.firstName ?? "")")
+                .font(LatoFont.medium.font(size: 16))
+                .foregroundStyle(.gray)
+                .padding(.bottom, 4)
+            Spacer()
+            NavigationLink {
+                UserDetailView(user: viewModel.user!)
+            } label: {
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+            }
+        }
+        .padding()
     }
 }
 
