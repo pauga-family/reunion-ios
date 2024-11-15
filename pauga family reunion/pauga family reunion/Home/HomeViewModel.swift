@@ -11,6 +11,9 @@ final class HomeViewModel : ObservableObject {
     private let userService: UserServicable
     
     @Published var userLoggedIn: Bool = false
+    var user: UserModel? {
+        return userService.getCurrentUser()
+    }
     
     var authenticationRootViewModel: AuthenticationRootViewModel {
         AuthenticationRootViewModel(delegate: self)

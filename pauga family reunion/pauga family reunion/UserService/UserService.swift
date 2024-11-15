@@ -20,7 +20,9 @@ class UserService : UserServicable {
     private var token: String?
     private let client: APIClientProtocol = APIClient()
     
-    private init() {}
+    private init() {
+        setCurrentUser(userLoginModel: debugUser())
+    }
     
     func logUserOut() {
         self.user = nil
@@ -30,16 +32,20 @@ class UserService : UserServicable {
         return user
     }
     
+    func debugUser() -> UserLoginModel {
+        return UserLoginModel(token: "", id: 1, firstName: "Justin", lastName: "Pauga", email: "paugajt@gmail.com")
+    }
+    
     func signUp(firstName: String, lastName: String, email: String, password: String) async throws {
         let endpoint = AuthAPIProvider.createUser(email: email, firstName: firstName, lastName: lastName, password: password)
-        let userLoginModel = try await client.request(endpoint: endpoint, responseModel: UserLoginModel.self)
+        let userLoginModel = debugUser() //try await client.request(endpoint: endpoint, responseModel: UserLoginModel.self)
         setToken(token: userLoginModel.token)
         setCurrentUser(userLoginModel: userLoginModel)
     }
     
     func signIn(email: String, password: String) async throws {
         let endpoint = AuthAPIProvider.signIn(email: email, password: password)
-        let userLoginModel = try await client.request(endpoint: endpoint, responseModel: UserLoginModel.self)
+        let userLoginModel = debugUser() //try await client.request(endpoint: endpoint, responseModel: UserLoginModel.self)
         setToken(token: userLoginModel.token)
         setCurrentUser(userLoginModel: userLoginModel)
     }
