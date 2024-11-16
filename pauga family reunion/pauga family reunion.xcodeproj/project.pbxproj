@@ -62,6 +62,8 @@
 		C7C119CB2CD83EB0000B12C4 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C119CA2CD83EA4000B12C4 /* View+Extensions.swift */; };
 		C7C119CE2CD83F19000B12C4 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C119CD2CD83F19000B12C4 /* RoundedCorner.swift */; };
 		C7C119D12CD997A2000B12C4 /* UserDetailListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C119D02CD997A2000B12C4 /* UserDetailListItemView.swift */; };
+		C7D35E0D2CE82AB0007E366A /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D35E0C2CE82AB0007E366A /* EventModel.swift */; };
+		C7D35E102CE84423007E366A /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D35E0F2CE84423007E366A /* EventCardView.swift */; };
 		C7E492042C00224500544CB3 /* DebugSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E492032C00224500544CB3 /* DebugSettingsView.swift */; };
 		C7E492062C0022C800544CB3 /* DebugSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E492052C0022C800544CB3 /* DebugSettingsViewModel.swift */; };
 		C7E492092C00243900544CB3 /* DebugSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E492082C00243900544CB3 /* DebugSetting.swift */; };
@@ -128,6 +130,8 @@
 		C7C119CA2CD83EA4000B12C4 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C7C119CD2CD83F19000B12C4 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		C7C119D02CD997A2000B12C4 /* UserDetailListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailListItemView.swift; sourceTree = "<group>"; };
+		C7D35E0C2CE82AB0007E366A /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		C7D35E0F2CE84423007E366A /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		C7E492032C00224500544CB3 /* DebugSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsView.swift; sourceTree = "<group>"; };
 		C7E492052C0022C800544CB3 /* DebugSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsViewModel.swift; sourceTree = "<group>"; };
 		C7E492082C00243900544CB3 /* DebugSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSetting.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
 				C74017072BE9BA8F00A37AE5 /* User Details */,
 				C7B7BE842B2426DF00CC9781 /* UserService */,
+				C7D35E0A2CE82A8B007E366A /* EventService */,
 				C75B1C032B13AF8F00EF21D5 /* Networking */,
 				C7B7BE872B242C9000CC9781 /* Secure */,
 				C77BDC6A2AE0AA2700EFC9C3 /* Resources */,
@@ -391,9 +396,34 @@
 		C7C119D22CD9A943000B12C4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7D35E0E2CE8440B007E366A /* Event Views */,
 				C7842C0D2CDD9FEF002EAEED /* Timeline Views */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C7D35E0A2CE82A8B007E366A /* EventService */ = {
+			isa = PBXGroup;
+			children = (
+				C7D35E0B2CE82A9F007E366A /* Models */,
+			);
+			path = EventService;
+			sourceTree = "<group>";
+		};
+		C7D35E0B2CE82A9F007E366A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7D35E0C2CE82AB0007E366A /* EventModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7D35E0E2CE8440B007E366A /* Event Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7D35E0F2CE84423007E366A /* EventCardView.swift */,
+			);
+			path = "Event Views";
 			sourceTree = "<group>";
 		};
 		C7E492022C00221700544CB3 /* Debug */ = {
@@ -527,12 +557,14 @@
 				C7B7BE862B24270300CC9781 /* UserService.swift in Sources */,
 				C7C119CE2CD83F19000B12C4 /* RoundedCorner.swift in Sources */,
 				C75B1C1B2B13E0D100EF21D5 /* Notification+Extensions.swift in Sources */,
+				C7D35E0D2CE82AB0007E366A /* EventModel.swift in Sources */,
 				C77BDC652AE0A5B300EFC9C3 /* SignUpViewModel.swift in Sources */,
 				C74017062BE8ADAE00A37AE5 /* HomeViewModel.swift in Sources */,
 				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,
 				C7E492062C0022C800544CB3 /* DebugSettingsViewModel.swift in Sources */,
 				C75B1C102B13C0A800EF21D5 /* APIError.swift in Sources */,
 				C75B1C152B13D7D700EF21D5 /* APIClientProtocol.swift in Sources */,
+				C7D35E102CE84423007E366A /* EventCardView.swift in Sources */,
 				C75B1C132B13C49300EF21D5 /* AuthAPIProvider.swift in Sources */,
 				C740170D2BE9BEF800A37AE5 /* UserDetailEditViewModel.swift in Sources */,
 				C7E492092C00243900544CB3 /* DebugSetting.swift in Sources */,

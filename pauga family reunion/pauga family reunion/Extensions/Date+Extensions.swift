@@ -16,6 +16,12 @@ extension Date {
         return calendar.component(component, from: self)
     }
     
+    func timeFromDate() -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mm aa"
+        return dateFormatter.string(from: self)
+    }
+    
     func dayOfWeek() -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"

@@ -41,7 +41,6 @@ private extension CalendarWeekView {
                         viewModel.changeWeek(.forward)
                     }
             }
-            //        .padding(.horizontal)
             .padding(.bottom, 16)
         }
     }
@@ -49,20 +48,25 @@ private extension CalendarWeekView {
     var detailDayView: some View {
         VStack {
             detailedDayViewHeader
-            HStack {
-                Divider()
-                Spacer()
-                VStack {
-                    Text("No events found for today.")
-                        .font(LatoFont.medium.font(size: 40))
-                        .foregroundStyle(Color.onWhite)
-                        .multilineTextAlignment(.center)
+            ScrollView(showsIndicators: false) {
+                HStack {
+                    Divider()
                     Spacer()
+                    VStack {
+                        //                    Text("No events found for today.")
+                        //                        .font(LatoFont.medium.font(size: 40))
+                        //                        .foregroundStyle(Color.onWhite)
+                        //                        .multilineTextAlignment(.center)
+                        //                    Spacer()
+                        ForEach(1..<6) { num in
+                            EventCardView(event: EventModel(id: UUID(), name: "Event number \(num)", location: "Laulii", date: Date().addingTimeInterval(TimeInterval(num) * 60 * 60), details: "This will be a super cool event and you should definitely go!"))
+                        }
+                    }
+                    
                 }
-                Spacer()
             }
+            //        .padding(.horizontal, 16)
         }
-        .padding(.horizontal, 16)
     }
     
     var detailedDayViewHeader: some View {
@@ -93,7 +97,7 @@ private extension CalendarWeekView {
                 .font(LatoFont.medium.font(size: 14))
                 .foregroundStyle(isSelected ? Color.onColor : Color.primary)
         }
-        .padding(9)
+        .frame(width: 40, height: 60)
         .background(isSelected ? Color.primary : Color.white)
         .cornerRadius(10)
         .shadow(radius: 1)
