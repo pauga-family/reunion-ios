@@ -6,9 +6,15 @@
 //
 
 import Foundation
+import Combine
 
 enum WeekChangeStatus {
     case forward, backward
+}
+
+protocol CalendarWeekDataSource {
+    var selectedDate: CurrentValueSubject<Date, Never> { get }
+    var baseDate: CurrentValueSubject<Date, Never> { get }
 }
 
 protocol CalendarWeekViewModelProtocol : ObservableObject {
@@ -24,12 +30,22 @@ class CalendarWeekViewModel : CalendarWeekViewModelProtocol {
     @Published var selectedDate: Date = Date.now
     var baseDate: Date = Date.now
     
-    init() {
+    private var dataSource: CalendarWeekDataSource
+    private var baseDateCancelleable: AnyCancellable?
+    private var selectedDateCancellable: AnyCancellable?
+    
+    init(dataSource: CalendarWeekDataSource) {
+        self.dataSource = dataSource
+        baseDateCancelleable = dataSource.baseDate
+            .sink { [weak self] in self?.baseDate = $0 }
+        selectedDateCancellable = dataSource.selectedDate
+            .sink { [weak self] in self?.selectedDate = $0 }
         dates = selectedDate.weekDates()
     }
     
     func dateTapped(_ date: Date) {
-        selectedDate = date
+        dataSource.selectedDate.send(date)
+        dataSource.baseDate.send(date)
         dates = selectedDate.weekDates()
     }
     

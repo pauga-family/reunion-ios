@@ -22,6 +22,7 @@ struct EventCardView: View {
             }
             .padding(.bottom, 20)
             Text(event.details)
+            
         }
         .frame(height: 150)
         .padding(.horizontal)

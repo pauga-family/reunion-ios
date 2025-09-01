@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct pauga_family_reunionApp: App {
+
+    let appCoordinator = AppCoordinator()
+    let navController = NavController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           ContentView()
         }
     }
 }

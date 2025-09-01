@@ -28,7 +28,7 @@ private extension HomeView {
             VStack {
                 headerView
                     .padding(.bottom, 16)
-                CalendarWeekView(viewModel: CalendarWeekViewModel())
+                CalendarWeekView(viewModel: CalendarWeekViewModel(dataSource: viewModel))
                 Spacer()
             }
     }

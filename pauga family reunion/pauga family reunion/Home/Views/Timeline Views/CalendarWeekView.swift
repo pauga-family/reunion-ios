@@ -51,6 +51,7 @@ private extension CalendarWeekView {
             ScrollView(showsIndicators: false) {
                 HStack {
                     Divider()
+                        .padding(.trailing, 4)
                     Spacer()
                     VStack {
                         //                    Text("No events found for today.")
@@ -65,7 +66,7 @@ private extension CalendarWeekView {
                     
                 }
             }
-            //        .padding(.horizontal, 16)
+                    .padding(.horizontal, 16)
         }
     }
     
@@ -107,5 +108,5 @@ private extension CalendarWeekView {
     }
 }
 #Preview {
-    CalendarWeekView(viewModel: CalendarWeekViewModel())
+    CalendarWeekView(viewModel: CalendarWeekViewModel(dataSource: HomeViewModel(userService: UserService.shared)))
 }
