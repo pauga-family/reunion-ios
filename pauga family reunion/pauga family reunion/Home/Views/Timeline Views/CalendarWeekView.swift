@@ -21,7 +21,7 @@ private extension CalendarWeekView {
     var weekView: some View {
         VStack {
             DatePicker("", selection: $viewModel.baseDate, displayedComponents: .date)
-                    .padding(.bottom, 4)
+                .padding(.bottom, 4)
             HStack {
                 Image(systemName: "chevron.left")
                     .resizable()
@@ -60,13 +60,17 @@ private extension CalendarWeekView {
                         //                        .multilineTextAlignment(.center)
                         //                    Spacer()
                         ForEach(1..<6) { num in
-                            EventCardView(event: EventModel(id: UUID(), name: "Event number \(num)", location: "Laulii", date: Date().addingTimeInterval(TimeInterval(num) * 60 * 60), details: "This will be a super cool event and you should definitely go!"))
+                            let event = EventModel(id: UUID(), name: "Event number \(num)", location: "Laulii", date: Date().addingTimeInterval(TimeInterval(num) * 60 * 60), details: "This will be a super cool event and you should definitely go!")
+                            NavigationLink {
+                                EventDetailView(event: event)
+                            } label: {
+                                EventCardView(event: event)
+                            }
                         }
                     }
-                    
+                    .buttonStyle(PlainButtonStyle())
                 }
             }
-                    .padding(.horizontal, 16)
         }
     }
     
