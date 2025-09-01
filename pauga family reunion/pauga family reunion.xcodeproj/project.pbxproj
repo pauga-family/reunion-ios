@@ -211,12 +211,8 @@
 				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
 				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
-				C7ACD7822E6628D600F5EA15 /* Events */,
-				C74017022BE8AD8E00A37AE5 /* Home */,
-				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
-				C74017072BE9BA8F00A37AE5 /* User Details */,
-				C7B7BE842B2426DF00CC9781 /* UserService */,
-				C7D35E0A2CE82A8B007E366A /* EventService */,
+				C7ACD7882E6653A500F5EA15 /* UI */,
+				C7ACD7892E6653D000F5EA15 /* Services */,
 				C798A0262D094CA800E6B208 /* Navigation */,
 				C75B1C032B13AF8F00EF21D5 /* Networking */,
 				C7B7BE872B242C9000CC9781 /* Secure */,
@@ -422,6 +418,26 @@
 				C7ACD7862E66294A00F5EA15 /* EventDetailViewModel.swift */,
 			);
 			path = "Event Detail";
+			sourceTree = "<group>";
+		};
+		C7ACD7882E6653A500F5EA15 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C7ACD7822E6628D600F5EA15 /* Events */,
+				C74017022BE8AD8E00A37AE5 /* Home */,
+				C77BDC5D2AE0A3D400EFC9C3 /* Authentication */,
+				C74017072BE9BA8F00A37AE5 /* User Details */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C7ACD7892E6653D000F5EA15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7B7BE842B2426DF00CC9781 /* UserService */,
+				C7D35E0A2CE82A8B007E366A /* EventService */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C7B7BE842B2426DF00CC9781 /* UserService */ = {

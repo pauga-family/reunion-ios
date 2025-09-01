@@ -110,6 +110,13 @@ private extension CalendarWeekView {
             viewModel.dateTapped(date)
         }
     }
+    
+    var emptyDayView: some View {
+        Text("No events found for today.")
+            .font(LatoFont.medium.font(size: 40))
+            .foregroundStyle(Color.onWhite)
+            .multilineTextAlignment(.center)
+    }
 }
 #Preview {
     CalendarWeekView(viewModel: CalendarWeekViewModel(dataSource: HomeViewModel(userService: UserService.shared)))

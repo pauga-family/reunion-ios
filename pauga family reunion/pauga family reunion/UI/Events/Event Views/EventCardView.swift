@@ -27,7 +27,7 @@ struct EventCardView: View {
         .frame(height: 150)
         .padding(.horizontal)
         .padding(.bottom, 20)
-        .background(Color.secondary)
+        .background(LinearGradient(gradient: Gradients.secondaryToTertiary.gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
         .cornerRadius(15)
         .shadow(radius: 4)
     }

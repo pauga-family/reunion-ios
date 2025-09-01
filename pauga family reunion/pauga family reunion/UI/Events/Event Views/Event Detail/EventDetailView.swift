@@ -18,7 +18,7 @@ struct EventDetailView: View {
     
     private let timeFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "hh:mm"
+        formatter.dateFormat = "h:mm a"
         return formatter
     }()
     
