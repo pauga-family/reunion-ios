@@ -20,8 +20,18 @@ struct CalendarWeekView<ViewModel: CalendarWeekViewModelProtocol>: View {
 private extension CalendarWeekView {
     var weekView: some View {
         VStack {
-            DatePicker("", selection: $viewModel.baseDate, displayedComponents: .date)
-                .padding(.bottom, 4)
+            HStack {
+                NavigationLink(
+                    destination: ModifyEventView(viewModel: ModifyEventViewModel(event: nil))) {
+                        Text("Add new event")
+                            .font(LatoFont.regular.font(size: 16))
+                            .padding()
+                            .foregroundColor(Color.blue)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                DatePicker("", selection: $viewModel.baseDate, displayedComponents: .date)
+                    .padding(.bottom, 4)
+            }
             HStack {
                 Image(systemName: "chevron.left")
                     .resizable()

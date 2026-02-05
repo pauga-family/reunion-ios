@@ -22,6 +22,8 @@ struct EventDetailView: View {
         return formatter
     }()
     
+    
+    // MARK: - View Body
     var body: some View {
         ZStack {
             banner
@@ -31,7 +33,7 @@ struct EventDetailView: View {
             }
         }
         .ignoresSafeArea(.all)
-        .background(Color.primary)
+        .background(Color.white)
     }
 }
 
@@ -51,6 +53,21 @@ private extension EventDetailView {
                 Divider()
                     .padding(.vertical, 8)
                 mapView
+                NavigationLink(
+                    destination: ModifyEventView(viewModel: ModifyEventViewModel(event: event))) {
+                        Text("Edit event")
+                            .font(LatoFont.regular.font(size: 16))
+                            .padding()
+                            .foregroundColor(Color.onColor)
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                LinearGradient(gradient: Gradients.secondaryToTertiary.gradient, startPoint: .leading, endPoint: .trailing)
+                            )
+                            .clipShape(Capsule())
+                            .padding(.horizontal, 20)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .padding(.top, 8)
             }
             .padding(.top, 16)
             .padding(.bottom, 100)

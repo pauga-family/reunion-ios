@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -155,6 +155,10 @@
 		F7254D522B2BBAA300F10816 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F7254D542B2BFD2100F10816 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C76CBD0A2ED37E320092B5C9 /* Edit Event */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Edit Event"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C75850312A6E286600AE21F5 /* Frameworks */ = {
@@ -492,6 +496,7 @@
 		C7D35E0E2CE8440B007E366A /* Event Views */ = {
 			isa = PBXGroup;
 			children = (
+				C76CBD0A2ED37E320092B5C9 /* Edit Event */,
 				C7ACD7852E66293700F5EA15 /* Event Detail */,
 				C7D35E0F2CE84423007E366A /* EventCardView.swift */,
 			);
@@ -540,6 +545,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C76CBD0A2ED37E320092B5C9 /* Edit Event */,
 			);
 			name = "pauga family reunion";
 			productName = "pauga family reunion";
