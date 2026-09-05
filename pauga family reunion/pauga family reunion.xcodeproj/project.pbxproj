@@ -62,6 +62,7 @@
 		C798A02E2D0951CE00E6B208 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798A02D2D0951CE00E6B208 /* AppCoordinator.swift */; };
 		C798F5B12D152DC100BF3433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798F5B02D152DC100BF3433 /* AppDelegate.swift */; };
 		C798F5B32D152E3D00BF3433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798F5B22D152E3D00BF3433 /* SceneDelegate.swift */; };
+		C7A83EC7304BC40700191AFE /* Reunion Core in Frameworks */ = {isa = PBXBuildFile; productRef = C7A83EC6304BC40700191AFE /* Reunion Core */; };
 		C7ACD7842E66292E00F5EA15 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD7832E66292E00F5EA15 /* EventDetailView.swift */; };
 		C7ACD7872E66294A00F5EA15 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD7862E66294A00F5EA15 /* EventDetailViewModel.swift */; };
 		C7B7BE862B24270300CC9781 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7BE852B24270300CC9781 /* UserService.swift */; };
@@ -138,6 +139,7 @@
 		C798A02D2D0951CE00E6B208 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C798F5B02D152DC100BF3433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C798F5B22D152E3D00BF3433 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C7A83EC8304BC52B00191AFE /* Reunion Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Reunion Core"; path = "pauga family reunion/Packages/Reunion Core"; sourceTree = "<group>"; };
 		C7ACD7832E66292E00F5EA15 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		C7ACD7862E66294A00F5EA15 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		C7B7BE852B24270300CC9781 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C76CBD0A2ED37E320092B5C9 /* Edit Event */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Edit Event"; sourceTree = "<group>"; };
+		C7A83EBF304BC17200191AFE /* Packages */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Packages; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A83EC7304BC40700191AFE /* Reunion Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +199,9 @@
 		C758502B2A6E286600AE21F5 = {
 			isa = PBXGroup;
 			children = (
+				C7A83EC8304BC52B00191AFE /* Reunion Core */,
 				C75850362A6E286600AE21F5 /* pauga family reunion */,
+				C7A83EC5304BC40700191AFE /* Frameworks */,
 				C75850352A6E286600AE21F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 		C75850362A6E286600AE21F5 /* pauga family reunion */ = {
 			isa = PBXGroup;
 			children = (
+				C7A83EBF304BC17200191AFE /* Packages */,
 				C75B1C1C2B13E75300EF21D5 /* pauga-family-reunion-Info.plist */,
 				C75850372A6E286600AE21F5 /* pauga_family_reunionApp.swift */,
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
@@ -407,6 +414,13 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		C7A83EC5304BC40700191AFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7ACD7822E6628D600F5EA15 /* Events */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +562,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				C76CBD0A2ED37E320092B5C9 /* Edit Event */,
+				C7A83EBF304BC17200191AFE /* Packages */,
 			);
 			name = "pauga family reunion";
 			productName = "pauga family reunion";
@@ -985,6 +1000,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7A83EC6304BC40700191AFE /* Reunion Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Reunion Core";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C758502C2A6E286600AE21F5 /* Project object */;
 }
