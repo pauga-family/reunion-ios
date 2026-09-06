@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Design_Core
 
 struct DebugSettingsView: View {
     @ObservedObject var viewModel: DebugSettingsViewModel

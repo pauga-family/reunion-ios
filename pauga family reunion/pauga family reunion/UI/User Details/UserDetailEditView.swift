@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Design_Core
 
 struct UserDetailEditView: View {
     @ObservedObject var viewModel: UserDetailEditViewModel

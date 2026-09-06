@@ -1,14 +1,14 @@
 //
 //  Fonts.swift
-//  pauga family reunion
+//  Design Core
 //
-//  Created by Justin Pauga on 10/18/23.
+//  Created by Justin Pauga on 9/5/26.
 //
 
 import Foundation
 import SwiftUI
 
-enum LatoFont {
+public enum LatoFont {
     case thinItalic, thin
     case semiboldItalic, semibold
     case regular
@@ -19,7 +19,7 @@ enum LatoFont {
     case boldItalic, bold
     case blackItalic, black
     
-    var name: String {
+    public var name: String {
         switch self {
         case .black: return "Lato-Black"
         case .blackItalic: return "Lato-BlackItalic"
@@ -41,12 +41,13 @@ enum LatoFont {
         }
     }
     
-    func font(size: CGFloat) -> SwiftUI.Font {
-        SwiftUI.Font.custom(name, size: size)
+    public func font(size: CGFloat) -> SwiftUI.Font {
+        FontRegistrar.registerFontsIfNeeded()
+        return SwiftUI.Font.custom(name, size: size)
     }
     
-    func uiFont(size: CGFloat) -> UIFont? {
-        UIFont.init(name: name, size: size)
+    public func uiFont(size: CGFloat) -> UIFont? {
+        FontRegistrar.registerFontsIfNeeded()
+        return UIFont.init(name: name, size: size)
     }
 }
-

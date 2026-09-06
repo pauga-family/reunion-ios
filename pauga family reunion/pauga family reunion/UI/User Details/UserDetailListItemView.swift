@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Design_Core
 
 struct UserDetailListItemView: View {
     var imageName: String

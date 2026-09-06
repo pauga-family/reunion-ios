@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Design_Core
 
 struct UserDetailView : View {
     var user: UserModel
@@ -16,7 +17,7 @@ struct UserDetailView : View {
             headerView
             detailView
         }
-        .background(Color.primary)
+        .background(Color.appPrimary)
     }
 }
 
@@ -28,7 +29,7 @@ private extension UserDetailView {
             .aspectRatio(contentMode: .fill)
             .frame(width: 30, height: 30)
             .padding()
-            .background(Color.secondary)
+            .background(Color.appSecondary)
             .clipShape(Circle())
     }
     
@@ -56,7 +57,7 @@ private extension UserDetailView {
             Spacer()
         }
         .frame(maxWidth: .infinity)
-        .background(Color.primary)
+        .background(Color.appPrimary)
     }
     
     var aboutSectionView: some View {
