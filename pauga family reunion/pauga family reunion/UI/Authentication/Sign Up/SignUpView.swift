@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Design_Core
 
 struct SignUpView: View {
     @ObservedObject var viewModel: SignUpViewModel

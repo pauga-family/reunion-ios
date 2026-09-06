@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import Design_Core
 
 struct ModifyEventView: View {
     @ObservedObject var viewModel: ModifyEventViewModel

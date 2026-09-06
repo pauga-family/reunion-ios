@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import Design_Core
 
 struct EventDetailView: View {
     var event: EventModel
@@ -120,7 +121,7 @@ private extension EventDetailView {
                     .frame(width: 20, height: 20)
                     .padding(8)
             }
-            .background(Color.secondary)
+            .background(Color.appSecondary)
             .clipShape(Circle())
             VStack(spacing: 4) {
                 Text("Date")
@@ -138,7 +139,7 @@ private extension EventDetailView {
                     .frame(width: 20, height: 20)
                     .padding(8)
             }
-            .background(Color.secondary)
+            .background(Color.appSecondary)
             .clipShape(Circle())
             VStack(spacing: 4) {
                 Text("Time")

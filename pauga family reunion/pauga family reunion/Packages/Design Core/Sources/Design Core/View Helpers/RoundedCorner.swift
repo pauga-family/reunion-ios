@@ -1,23 +1,23 @@
 //
 //  RoundedCorner.swift
-//  pauga family reunion
+//  Design Core
 //
-//  Created by Justin Pauga on 11/3/24.
+//  Created by Justin Pauga on 9/5/26.
 //
 
 import Foundation
 import SwiftUI
 
-struct RoundedCorner : Shape {
+public struct RoundedCorner : Shape {
     let radius: CGFloat
     let corners: UIRectCorner
     
-    init(radius: CGFloat = .infinity, corners: UIRectCorner = .allCorners) {
+    public init(radius: CGFloat = .infinity, corners: UIRectCorner = .allCorners) {
         self.radius = radius
         self.corners = corners
     }
     
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         return Path(path.cgPath)
     }

@@ -1,15 +1,15 @@
 //
-//  Color+Extensions.swift
-//  pauga family reunion
+//  Colors.swift
+//  Design Core
 //
-//  Created by Justin Pauga on 10/18/23.
+//  Created by Justin Pauga on 9/5/26.
 //
 
 import Foundation
 import SwiftUI
 
-extension Color {
-    static var primary: Color {
+public extension Color {
+    static var appPrimary: Color {
         Color(hex: "264089")
     }
     
@@ -21,31 +21,31 @@ extension Color {
         Color(hex: "#454648")
     }
     
-    static var primaryDark: Color {
+    static var appPrimaryDark: Color {
         Color(hex: "192A56")
     }
     
-    static var secondary: Color {
+    static var appSecondary: Color {
         Color(hex: "ee4481")
     }
     
-    static var secondaryDark: Color {
+    static var appSecondaryDark: Color {
         Color(hex: "FF7F50")
     }
     
-    static var tertiary: Color {
+    static var appTertiary: Color {
         Color(hex: " faa85d")
     }
     
-    static var tertiaryDark: Color {
+    static var appTertiaryDark: Color {
         Color(hex: "EAEAEA")
     }
     
-    static var quaternary: Color {
+    static var appQuaternary: Color {
         Color(hex: "333333")
     }
     
-    static var quaternaryDark: Color {
+    static var appQuaternaryDark: Color {
         Color(hex: "FFFFFF")
     }
     

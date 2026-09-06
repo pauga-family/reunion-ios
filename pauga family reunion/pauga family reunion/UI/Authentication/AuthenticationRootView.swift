@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Design_Core
 
 struct AuthenticationRootView: View {
     @ObservedObject var viewModel: AuthenticationRootViewModel

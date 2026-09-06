@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Design_Core
 
 struct CalendarWeekView<ViewModel: CalendarWeekViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
@@ -106,14 +107,14 @@ private extension CalendarWeekView {
         return VStack {
             Text(date.abbreviatedDayOfWeek() ?? "")
                 .font(LatoFont.bold.font(size: 16))
-                .foregroundStyle(isSelected ? Color.onColor : Color.primary)
+                .foregroundStyle(isSelected ? Color.onColor : Color.appPrimary)
                 .padding(.bottom, 4)
             Text(components.description)
                 .font(LatoFont.medium.font(size: 14))
-                .foregroundStyle(isSelected ? Color.onColor : Color.primary)
+                .foregroundStyle(isSelected ? Color.onColor : Color.appPrimary)
         }
         .frame(width: 40, height: 60)
-        .background(isSelected ? Color.primary : Color.white)
+        .background(isSelected ? Color.appPrimary : Color.white)
         .cornerRadius(10)
         .shadow(radius: 1)
         .onTapGesture {
