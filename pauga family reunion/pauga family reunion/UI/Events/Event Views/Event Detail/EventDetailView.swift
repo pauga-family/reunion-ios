@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 import Design_Core
+import Reunion_Core
 
 struct EventDetailView: View {
     var event: EventModel

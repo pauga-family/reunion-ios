@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol APIClientProtocol {
+public protocol APIClientProtocol {
     func request<T: Decodable>(endpoint: APIProviding, responseModel: T.Type) async throws -> T
 }

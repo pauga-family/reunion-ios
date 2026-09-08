@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum KnownErrors {
+public enum KnownErrors {
     case decodingDataError
     case expiredToken
     case validationError(message: String)
 
-    var error: APIError {
+    public var error: APIError {
         switch self {
         case .decodingDataError:
             return APIError(

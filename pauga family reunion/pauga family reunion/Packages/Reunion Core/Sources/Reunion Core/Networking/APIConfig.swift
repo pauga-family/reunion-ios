@@ -8,7 +8,7 @@
 import Foundation
 
 class APIConfig {
-    static var shared = APIConfig()
+    nonisolated(unsafe) static let shared = APIConfig()
     private init() {}
 
     var scheme: String {

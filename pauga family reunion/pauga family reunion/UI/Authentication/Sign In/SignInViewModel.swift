@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Reunion_Core
 
 enum SignInLoadingState {
     case loading, finished

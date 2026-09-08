@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Design_Core
+import Reunion_Core
 
 struct CalendarWeekView<ViewModel: CalendarWeekViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
