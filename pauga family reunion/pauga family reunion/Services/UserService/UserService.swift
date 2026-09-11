@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Reunion_Core
 
 protocol UserServicable {
     func logUserOut()

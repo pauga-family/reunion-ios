@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import Design_Core
+import Reunion_Core
 
 struct UserDetailView : View {
     var user: UserModel

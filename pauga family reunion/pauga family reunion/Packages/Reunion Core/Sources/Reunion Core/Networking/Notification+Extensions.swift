@@ -7,6 +7,6 @@
 
 import Foundation
 
-extension Notification.Name {
+public extension Notification.Name {
     static let terminateSession = Notification.Name("terminate-session")
 }

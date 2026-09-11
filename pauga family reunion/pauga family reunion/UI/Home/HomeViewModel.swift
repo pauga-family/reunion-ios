@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Reunion_Core
 
 final class HomeViewModel : ObservableObject, CalendarWeekDataSource {
     private let userService: UserServicable

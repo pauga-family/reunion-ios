@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Reunion_Core
 
 final class UserDetailEditViewModel : ObservableObject {
     // MARK: - Published Variables

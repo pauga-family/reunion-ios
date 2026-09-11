@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum RequestMethod: String {
+public enum RequestMethod: String {
     case get = "GET"
     case put = "PUT"
     case post = "POST"
     case delete = "DELETE"
 }
 
-protocol APIProviding {
+public protocol APIProviding {
     var scheme: String { get }
     var baseURL: String { get }
     var path: String { get }
@@ -26,7 +26,7 @@ protocol APIProviding {
 }
 
 // MARK: - Default implementation
-extension APIProviding {
+public extension APIProviding {
     var scheme: String {
         APIConfig.shared.scheme
     }

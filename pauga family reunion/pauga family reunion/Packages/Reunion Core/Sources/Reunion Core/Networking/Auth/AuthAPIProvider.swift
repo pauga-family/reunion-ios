@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum AuthAPIProvider: APIProviding {
+public enum AuthAPIProvider: APIProviding {
     case createUser(email: String, firstName: String, lastName: String, password: String)
     case signIn(email: String, password: String)
-    
-    var path: String {
+
+    public var path: String {
         switch self {
         case .createUser:
             return "/auth/create-user"
@@ -20,7 +20,7 @@ enum AuthAPIProvider: APIProviding {
         }
     }
 
-    var method: RequestMethod {
+    public var method: RequestMethod {
         switch self {
         case .createUser:
             return .post
@@ -29,14 +29,14 @@ enum AuthAPIProvider: APIProviding {
         }
     }
 
-    var queryItems: [URLQueryItem]? {
+    public var queryItems: [URLQueryItem]? {
         switch self {
         default:
             return nil
         }
     }
 
-    var body: [String : Any]? {
+    public var body: [String : Any]? {
         switch self {
         case .createUser(let email, let firstName, let lastName, let password):
             return [
@@ -53,7 +53,7 @@ enum AuthAPIProvider: APIProviding {
         }
     }
 
-    var mockFile: String? {
+    public var mockFile: String? {
         switch self {
         case .createUser:
             return "_createUserMockResponse"
