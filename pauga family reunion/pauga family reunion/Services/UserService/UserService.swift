@@ -58,7 +58,7 @@ class UserService : UserServicable {
     
     private func setToken(token: String) {
         let jwtData = token.data(using: String.Encoding.utf8)!
-        let saveStatus = KeychainManager.save(key: "userJWT", data: jwtData)
+        let saveStatus = KeychainService.save(key: "userJWT", data: jwtData)
         
         if saveStatus == errSecSuccess {
             print("Stored token successfully")
@@ -68,7 +68,7 @@ class UserService : UserServicable {
     }
     
     private func fetchToken() -> String? {
-        guard let tokenData = KeychainManager.load(key: "userJWT") else {
+        guard let tokenData = KeychainService.load(key: "userJWT") else {
             return nil
         }
         
