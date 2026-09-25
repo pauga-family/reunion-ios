@@ -8,42 +8,34 @@
 import Security
 import Foundation
 
-class KeychainService {
-    class func save(token: String, account: String) {
-        if let data = token.data(using: .utf8) {
-            let query: [String : Any] = [kSecClass as String: kSecClassGenericPassword,
-                                         kSecAttrAccount as String: account,
-                                         kSecValueData as String: data]
-            SecItemAdd(query as CFDictionary, nil)
-        }
+public class KeychainService {
+    public class func save(key: String, data: Data) -> OSStatus {
+        let query = [
+            kSecClass as String : kSecClassGenericPassword as String,
+            kSecAttrAccount as String : key,
+            kSecValueData as String : data
+        ] as [String : Any]
+
+        SecItemDelete(query as CFDictionary)
+
+        return SecItemAdd(query as CFDictionary, nil)
     }
-    
-    class func loadToken(account: String) -> String? {
-        let query: [String : Any] = [kSecClass as String: kSecClassGenericPassword,
-                                     kSecAttrAccount as String: account,
-                                     kSecReturnData as String: kCFBooleanTrue!,
-                                     kSecMatchLimit as String: kSecMatchLimitOne]
+
+    public class func load(key: String) -> Data? {
+        let query = [
+            kSecClass as String : kSecClassGenericPassword,
+            kSecAttrAccount as String : key,
+            kSecReturnData as String : kCFBooleanTrue!,
+            kSecMatchLimit as String : kSecMatchLimitOne
+        ] as [String : Any]
+
         var dataTypeRef: AnyObject?
         let status: OSStatus = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
-        
+
         if status == noErr {
-            if let retrivedData = dataTypeRef as? Data,
-               let result = String(data: retrivedData, encoding: .utf8) {
-                return result
-            }
+            return dataTypeRef as! Data?
+        } else {
+            return nil
         }
-        return nil
     }
 }
-
-
-/*
- Save the token: 
-    KeychainService.save(token: receivedToken, account: "myAccount")
- 
- Load the token:
-    if let savedToken = KeychainService.loadToken(account: "myAccount") {
-        let jwt = JWT(token: savedToken)
-        print(jwt.payload)
-    }
- */
