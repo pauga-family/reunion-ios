@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import SwiftUI
+import Reunion_Core
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
