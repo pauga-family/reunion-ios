@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Reunion_Core
 
 let userLoginSetting: DebugSetting = DebugSetting(
     name: "Log User In",

@@ -32,7 +32,6 @@
 		C7A83ED9304BCB6D00191AFE /* Design Core in Frameworks */ = {isa = PBXBuildFile; productRef = C7A83ED8304BCB6D00191AFE /* Design Core */; };
 		C7ACD7842E66292E00F5EA15 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD7832E66292E00F5EA15 /* EventDetailView.swift */; };
 		C7ACD7872E66294A00F5EA15 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD7862E66294A00F5EA15 /* EventDetailViewModel.swift */; };
-		C7B7BE862B24270300CC9781 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7BE852B24270300CC9781 /* UserService.swift */; };
 		C7C119C92CD83C0E000B12C4 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C119C82CD83C0E000B12C4 /* UserDetailView.swift */; };
 		C7C119CB2CD83EB0000B12C4 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C119CA2CD83EA4000B12C4 /* View+Extensions.swift */; };
 		C7C119D12CD997A2000B12C4 /* UserDetailListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C119D02CD997A2000B12C4 /* UserDetailListItemView.swift */; };
@@ -73,7 +72,6 @@
 		C7A83ED5304BCB4C00191AFE /* Design Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Design Core"; path = "pauga family reunion/Packages/Design Core"; sourceTree = "<group>"; };
 		C7ACD7832E66292E00F5EA15 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		C7ACD7862E66294A00F5EA15 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
-		C7B7BE852B24270300CC9781 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		C7C119C82CD83C0E000B12C4 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		C7C119CA2CD83EA4000B12C4 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C7C119D02CD997A2000B12C4 /* UserDetailListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailListItemView.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				C75850392A6E286600AE21F5 /* ContentView.swift */,
 				C758503B2A6E286700AE21F5 /* Assets.xcassets */,
 				C7ACD7882E6653A500F5EA15 /* UI */,
-				C7ACD7892E6653D000F5EA15 /* Services */,
 				C798A0262D094CA800E6B208 /* Navigation */,
 				C7B7BE872B242C9000CC9781 /* Secure */,
 				C77BDC6A2AE0AA2700EFC9C3 /* Resources */,
@@ -263,22 +260,6 @@
 				C74017072BE9BA8F00A37AE5 /* User Details */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		C7ACD7892E6653D000F5EA15 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				C7B7BE842B2426DF00CC9781 /* UserService */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		C7B7BE842B2426DF00CC9781 /* UserService */ = {
-			isa = PBXGroup;
-			children = (
-				C7B7BE852B24270300CC9781 /* UserService.swift */,
-			);
-			path = UserService;
 			sourceTree = "<group>";
 		};
 		C7B7BE872B242C9000CC9781 /* Secure */ = {
@@ -420,7 +401,6 @@
 				C798F5B12D152DC100BF3433 /* AppDelegate.swift in Sources */,
 				C7E4920B2C00246D00544CB3 /* DebugHelpers.swift in Sources */,
 				C77BDC632AE0A49800EFC9C3 /* SignUpView.swift in Sources */,
-				C7B7BE862B24270300CC9781 /* UserService.swift in Sources */,
 				C77BDC652AE0A5B300EFC9C3 /* SignUpViewModel.swift in Sources */,
 				C74017062BE8ADAE00A37AE5 /* HomeViewModel.swift in Sources */,
 				C758503A2A6E286600AE21F5 /* ContentView.swift in Sources */,

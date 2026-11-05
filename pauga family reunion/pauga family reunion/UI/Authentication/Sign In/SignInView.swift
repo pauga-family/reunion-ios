@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Design_Core
+import Reunion_Core
 
 struct SignInView: View {
     @ObservedObject var viewModel: SignInViewModel

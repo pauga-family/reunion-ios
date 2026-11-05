@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Reunion_Core
 
 enum AppRoute : Route {
     case authentication, home
